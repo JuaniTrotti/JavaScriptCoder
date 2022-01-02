@@ -1,5 +1,5 @@
 var precioInicial = 0;
-var valorTotalPro = 0
+var valorTotalPro = 0;
 var obra1 = 600;
 var obra2 = 700;
 var obra3 = 1000;
