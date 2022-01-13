@@ -21,6 +21,6 @@ console.log(arrayPersonas);
 // ordeno el array de menor a mayor
 arrayPersonas.sort(function(a,b){return a.edad - b.edad;});
 
-muestro el array ordenado
+// muestro el array ordenado
 console.log(arrayPersonas.sort());
 
