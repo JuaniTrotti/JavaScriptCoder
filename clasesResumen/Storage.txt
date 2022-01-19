@@ -63,4 +63,7 @@
 	y usamos parse() --> recibe un texto JSON como parametro y devuelve el objeto
 	correspondiente
 		JSON.parse(variable del json)
+
+
+	JSON --> JavaScript Object Notation
 		

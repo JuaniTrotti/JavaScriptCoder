@@ -1,0 +1,54 @@
+//DOM
+
+	DOM = Modelo de Objetos del Documento \\ Document Object Model
+	cada etiqueta html es un objeto al que podemos llamar nodo
+	tenemos los nodos padre y los nodos hijo
+
+//Acceder a los nodos
+
+	getElementById() --> con este metodo accedemos directamente al	
+			     elemento por su id
+
+	getElementsByClassName() --> accedemos a todos los nodos que tengan
+				     esa clase
+
+	getElementsByTagName() --> accedemos al nodo por el tag
+
+//Propiedades de los nodos
+
+	//mas usadas
+		.innerHTML -> devuelve a la ruta del nodo
+		.innerText -> devuelve al contenido del nodo
+
+//getElementsByClassName() 
+	
+	Devuelve un array (HTML collection). Cada posicion es un nodo = un 
+	elemento con esa clase.
+
+//getElementsByTagName()
+
+	Busca las etiquetas como <div> etc
+	y devuelve un array (HTML collection)
+
+//Recorrer un HTML Collection
+
+	Usamos un for...of
+
+//Creacion de un nodo de JS
+
+	Se usa la funcion document.createElement("nombre etiqueta HTML")
+	y despues se tiene que agregar como hijo de otro nodo
+	por ejemplo <body>
+	document.body.appendChild(variable); 
+
+//Eliminar nodo desde JS
+
+	usamos removeChild()
+
+		ejemplo
+		objeto.parentNode.removeChild()
+
+	parentNode devuelve el padre del nodo
+
+
+
