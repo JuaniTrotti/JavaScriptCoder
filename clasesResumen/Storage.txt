@@ -1,0 +1,66 @@
+///JavaScript///
+
+//Objeto Storage
+	
+	El objeto storage nos permite almacenar datos de manera local sin necesidad de
+	realizar ningunca conexion con el servidor. Uno se almacena de forma indefinida
+	en el navegador y el otro temporalmente hasta que se cierre las pestaña.
+
+	\\TODO SE GUARDA EN FORMATO STRING EN LA LOCALSTORAGE\\
+
+//Local Storage
+
+	setItem
+
+	los datos almacenados en localStorage se almancena en el navegador de forma indefinida
+	o hasta que se borren los datos de navegación 
+	Para almacenar la informacion se utiliza
+		metodo -> localStorage.setItem(clave, valor)
+		clave = nombre para identificar el elemento, la clave se pone con ''
+		valor = valor/contenido del elemento
+
+	getItem
+
+	para acceder al localStorage 
+		metodo -> let variable = localStorage.getItem("clave")
+
+//Session Storage
+
+	Para almacenar la informacion se utiliza
+		metodo -> session Storage.setItem(clave, valor)
+		clave = nombre para identificar el elemento, la clave se pone con ''
+		valor = valor/contenido del elemento
+
+//Recorrer storage
+
+	para local y session storage es lo mismo:
+	
+		let local = localStorage.length;
+		alert("tengo " + local + " localStorages!")
+
+		for (let i=0; i<localStorage.length; i++){
+			let clave = localStorage.key(i);
+			console.log("clave: " + clave);
+			console.log("Valor: " + localStorage.getItem(clave));
+		}
+		console.log("fin de")
+
+//Eliminar info de los Storage
+
+	se usa el metodo removeItem
+		--> localStorage.removeItem(clave);
+
+	con el metodo clear se elimina todos los items
+		--> localStorage.clear(); 
+
+//Almacenar obejtos en storage
+	
+	Para hacerlo hay que convertir los objetos en json (texto plano)
+	usamos stringify() --> acepta un objeto como parametro y devuelve la forma	
+	de texto JSON equivalente
+		JSON.stringify(objeto);
+
+	y usamos parse() --> recibe un texto JSON como parametro y devuelve el objeto
+	correspondiente
+		JSON.parse(variable del json)
+		
