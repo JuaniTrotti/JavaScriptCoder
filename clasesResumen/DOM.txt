@@ -50,5 +50,10 @@
 
 	parentNode devuelve el padre del nodo
 
+//Plantillas literales
+
+	Es para concatenar, ´todo aca y para las variables se usa ${}´
+	
+	ejemplo --> let plantilla = hola soy ${persona.nombre} 
 
 
