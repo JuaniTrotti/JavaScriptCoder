@@ -2,7 +2,19 @@ body {
     font-size: 3em;
 }
 
-.lista {
+.listaDeDatos {
     list-style: none; 
     width: 20%;
+}
+
+.cFlex {
+    display: flex;
+}
+
+.containerPersonas {
+    justify-content: space-between;
+}
+
+.containerTexto {
+    justify-content: space-between;
 }

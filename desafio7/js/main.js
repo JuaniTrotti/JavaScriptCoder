@@ -1,20 +1,18 @@
-// variables
-var contador = 0;
-const carrito = [];
+//variables
+const totalPersonas = [];
+const almacenados = [];
 var sino = "";
-var preciofinal = 0;
 
-// objetos
-class producto {
-    constructor(obra, precio, cantidad) {
-        this.obra = obra.toLowerCase();
-        this.precio = parseInt(precio);
-        this.cantidad = parseInt(cantidad);
-        this.precioTotal = this.precio * this.cantidad; 
+//clases
+class personas {
+    constructor(nombre, email, DNI) {
+        this.nombre = nombre.toLowerCase();
+        this.email = email.toLowerCase();
+        this.DNI = parseInt(DNI);
     }
 }
 
-// funciones
+//funciones
 function hayDatos(sino) {
     sino = prompt("Agregar productos al carro?").toLowerCase();
     while (sino != "si" && sino != "no") {
@@ -24,44 +22,79 @@ function hayDatos(sino) {
     return sino;
 }
 
-function cantidad() {
-    let res = parseInt(prompt("Cuantos queres llevar? (CANTIDAD EN NUMEROS)"));
-    while (res / 1 != res) {
-        alert("Ingrese CANTIDAD EN NUMEROS");
-        res = prompt("Cuantos queres llevar? (CANTIDAD EN NUMEROS)");
-    }
-    return res;
+function pedirDatos() {
+    let nombre = prompt("ingrese su nombre:");
+    // document.getElementById("nombre").innerHTML = "<li>nombre:"+ nombre +"</li>";
+    let mail = prompt("ingrese su mail:");
+    // document.getElementById("nombre").innerHTML = "<li>nombre:"+ nombre +"</li>";
+    let DNI = prompt("ingrese su DNI");
+    // document.getElementById("nombre").innerHTML = "<li>nombre:"+ nombre +"</li>";
+    totalPersonas.push(new personas(nombre, mail, DNI));
+}
+    
+
+function guardarDatos(clave, valor) {
+    // const valor = almacenados.concat(jsonN);
+    localStorage.setItem(clave, valor);
 }
 
-function resumen(preciofinal) {
-    for (const i of carrito) {
-        alert("item: " + i.obra + " cantidad: " + i.cantidad + " precio: $" + i.precio + " total a pagar: $" + i.precioTotal);
-        preciofinal = preciofinal + i.precioTotal;
+function crearPersonas(totalPersonas) {
+    for(objeto of totalPersonas) {
+        let section = document.getElementById("datosPersonaNueva");
+        let div = document.createElement("div");
+        div.innerHTML = "<div class='persona'><ul class='listaDeDatos'><li id='nombre'>Nombre:"+ objeto.nombre +"</li><li id='gmail'>Email:"+ objeto.email +"</li><li id='DNI'>DNI:"+ objeto.DNI+"</li></ul></div>";
+        section.appendChild(div);
     }
-    alert("total a pagar: $" + preciofinal);
 }
 
+function levantarJSON() {
+    const almacenados = JSON.parse(localStorage.getItem("totalpersonas"));
+    console.log(almacenados);
 
+    for(objeto of almacenados) {
+        let section = document.getElementById("datosPersonasAntes");
+        let div = document.createElement("div");
+        div.innerHTML = "<div class='persona'><ul class='listaDeDatos'><li id='nombre'>Nombre:"+ objeto.nombre +"</li><li id='gmail'>Email:"+ objeto.email +"</li><li id='DNI'>DNI:"+ objeto.DNI+"</li></ul></div>";
+        section.appendChild(div);
+    }
+}
+
+function hayJSON() {
+    for (let i = 0; i < localStorage.length; i++) {
+        let clave = localStorage.key(i);
+        console.log("clave: "+ clave);
+        console.log("valor: "+ localStorage.getItem(clave));
+    }
+
+    if (localStorage.length > 0) {
+        levantarJSON(totalPersonas);
+    }
+}
+
+function concatenarYguardar(totalPersonas) {
+    const arr1 = JSON.parse(localStorage.getItem("totalpersonas"));
+    const arr2 = totalPersonas;
+    const arr3 = arr1.concat(arr2);
+    guardarDatos("totalpersonas", JSON.stringify(arr3));
+}
 
 // main
-while (hayDatos(sino) == "si" && contador <= 3) {
-    let product = prompt("que obra queres llevar? (para elegir ponga el numero del producto (1, 2 o 3))");
-    contador =+ 1;
 
-    switch (product) {
-        case "1":
-            carrito.push(new producto("obra1", "600", cantidad()));
-            break;
-        case "2":
-            carrito.push(new producto("obra2", "700", cantidad()));
-            break;
-        case "3":
-            carrito.push(new producto("obra3", "1000", cantidad()));
-            break;
-        default:
-            alert("para elegir ponga el numero del producto (1, 2 o 3)")
-            break;
-    }
+
+
+while(hayDatos(sino) == "si") {
+    pedirDatos();
 }
 
-resumen(preciofinal);
+crearPersonas(totalPersonas);
+
+if (localStorage.length > 0) {
+    concatenarYguardar(totalPersonas);
+
+} else {
+    guardarDatos("totalpersonas", JSON.stringify(totalPersonas));
+}
+
+hayJSON();
+
+// localStorage.clear();
