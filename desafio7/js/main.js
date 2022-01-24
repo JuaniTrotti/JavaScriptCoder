@@ -83,6 +83,7 @@ function concatenarYguardar(totalPersonas) {
 
 
 while(hayDatos(sino) == "si") {
+    console.log("hola");
     pedirDatos();
 }
 
