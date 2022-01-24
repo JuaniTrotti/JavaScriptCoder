@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style/style.css" rel="stylesheet" type="text/css">
+    <title>Desafio8 || Eventos</title>
+</head>
+<body>
+    <div class="container cFlex">
+        <section class="cFlex formCal">
+            <form action="" class="cLabel cFlex">
+                <label for="capIn" class="label">Capital Inicial:</label>
+                <label for="capAn" class="label">Adición anual:</label>
+                <label for="anio" class="label">Años:</label>
+                <label for="tasIn" class="label">Tasa interés:</label>
+                <!-- <label for="inAn" class="label">Interés compuesto al año (cantidad de veces):</label> -->
+                
+            </form>
+            <form action="" id="calcuForm" class="cInput cFlex">             
+                <input class="inputCal" id="precioInicial" type="text">    
+                <input class="inputCal" id="precioAnual" type="text">    
+                <input class="inputCal" id="anios" type="text"> 
+                <input class="inputCal" id="interes" type="text">
+                <!-- <input class="inputCal" id="cantVeces" type="text"> -->
+                <input id="calcular" type="button" value="Calcular">
+                <!-- <input type="reset" id="resetear"> -->
+            </form>
+        </section>
+    </div>
+
+    <div class="errores cFlex">
+        <p id="listaError" class="error">
+            
+        </p>
+    </div>
+
+    <div class="resultado cFlex">
+        <div id="titulo">
+            <ul class="lista">
+                <li>Años</li>
+                <li>DepositoInicial</li>
+                <li>DepositoAdicionalAcumulado</li>
+                <li>InteresAcumulado</li>
+                <li>Total</li>
+            </ul>
+        </div>
+
+        <div id="separador">
+            <div class="separador"></div>
+        </div>
+
+        <div id="lista">
+            <ul class="lista cFlex" id="listaR">
+                <li id="rAnio"></li>
+                <li id="rDI"></li>
+                <li id="rDA"></li>
+                <li id="rIA"></li>
+                <li id="rT"></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
+
+
+
+
