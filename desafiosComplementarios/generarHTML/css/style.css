@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cFlex {
+    display: flex;
+}
+
+.header {
+    align-items: center;
+    justify-content: space-between;
+    width: 620px;
+    padding: 20px;
+}
+
+.logo {
+    justify-content: flex-start;
+}
+
+.menu {
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.container {
+    flex-direction: column;
+    align-items: center;
+    width: 640px;
+}
+
+.containerMain {
+    /* border: 2px solid black; */
+    margin-top: 40px;
+    width: 100%;
+}
+
+.cardsContainer {
+    justify-content: flex-start;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.card {
+    width: 200px;
+    height: 250px;
+    background-color: rgb(94, 94, 94);
+    border-radius: 1rem;
+}
+
+.card .foto {
+    background-color: rgb(179, 179, 179);
+    height: 60%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card .precio {
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+}
+
+.card .nombre {
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+}
+
+.paginaContainer {
+    flex-direction: column;
+    align-items: center;
+}
