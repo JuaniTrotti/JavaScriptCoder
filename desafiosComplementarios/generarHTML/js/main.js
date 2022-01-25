@@ -1,26 +1,29 @@
-// clases
-class personas {
-    constructor(n1, n2) {
-        this.nombre = n1.toLowerCase();
-        this.edad = parseInt(n2)
+//clases
+class productos {
+    constructor(nombre, precio) {
+        this.nombre = nombre;
+        this.precio = parseInt(precio);
     }
 }
 
-// variables
-const arrayPersonas = [];
+const prod = [];
 
-// cargo el array
-arrayPersonas.push(new personas("Oscar", "43"));
-arrayPersonas.push(new personas("Marcela", "43"));
-arrayPersonas.push(new personas("Mercedes", "42"));
-arrayPersonas.push(new personas("Palacios", "22"));
+prod.push(new productos("obra1", prompt("valor de obra:")));
+prod.push(new productos("obra2", prompt("valor de obra:")));
+prod.push(new productos("obra3", prompt("valor de obra:")));
+prod.push(new productos("obra4", prompt("valor de obra:")));
+prod.push(new productos("obra5", prompt("valor de obra:")));
 
-// muestro el array original
-console.log(arrayPersonas);
 
-// ordeno el array de menor a mayor
-arrayPersonas.sort(function(a,b){return a.edad - b.edad;});
 
-// muestro el array ordenado
-console.log(arrayPersonas.sort());
 
+// for (let i = 0; i <= prod.length; i++) {
+    
+// }
+
+for(objeto of prod) {
+    let section = document.getElementById("cardContainer");
+    let div = document.createElement("div");
+    div.innerHTML = `<div class="card"><div class="foto cFlex"></div><div class="nombre cFlex"><h4>${objeto.nombre}</h4></div><div class="precio cFlex"><h4>${objeto.precio}</h4></div></div>`;
+    section.appendChild(div);
+}
