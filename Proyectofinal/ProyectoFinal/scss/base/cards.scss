@@ -1,0 +1,14 @@
+.containerObras {
+    width: 100%;
+
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+
+    .obra {
+        width: 860px;
+        height: 860px;
+        background-color: gray;
+    }
+}
