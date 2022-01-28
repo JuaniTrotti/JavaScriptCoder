@@ -1,6 +1,7 @@
-@import 'base/fonts';
-@import 'base/variables.scss';
-@import 'base/general';
-@import 'base/cards.scss';
-@import 'componentes/header';
-@import 'componentes/main';
+@import 'base/_fonts';
+@import 'base/_variables.scss';
+@import 'base/_general';
+@import 'base/_cards.scss';
+@import 'componentes/_header';
+@import 'componentes/_main';
+@import 'base/mediaQuery';
