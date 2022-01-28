@@ -28,7 +28,7 @@
 }
 
 body {
-  background-color: red;
+  background-color: black;
 }
 
 .cFlex {
@@ -118,7 +118,7 @@ body {
 /* //////////////////////////////////////////////////////////////////////////////// */
 /* mediaQuery */
 /* //////////////////////////////////////////////////////////////////////////////// */
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: 1800px) {
   .containerBody {
     justify-content: center;
     flex-grow: 1;
@@ -132,7 +132,7 @@ body {
     align-items: center;
   }
 }
-@media screen and (max-width: 1900px) and (min-width: 1200px) {
+@media screen and (max-width: 1800px) and (min-width: 1200px) {
   .containerBody {
     justify-content: center;
   }
