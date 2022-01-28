@@ -1,3 +1,5 @@
+/* general */
+/* //////////////////////////////////////////////////////////////////////////////// */
 * {
     padding: 0;
     margin: 0;
@@ -31,7 +33,8 @@ body {
     align-items: center;
 }
 
-.containerMain {
-    width: 100%;
-    height: 200px;
+.textoHeader {
+    font-family: var(--font-header);
+    font-size: 2rem;
 }
+/* //////////////////////////////////////////////////////////////////////////////// */

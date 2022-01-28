@@ -24,6 +24,6 @@ prod.push(new productos("obra5", prompt("valor de obra:")));
 for(objeto of prod) {
     let section = document.getElementById("cardContainer");
     let div = document.createElement("div");
-    div.innerHTML = `<div class="card"><div class="foto cFlex"></div><div class="nombre cFlex"><h4>${objeto.nombre}</h4></div><div class="precio cFlex"><h4>${objeto.precio}</h4></div></div>`;
+    div.innerHTML = `<div class="card cFlex"><div class="foto cFlex"></div><div class="nombre cFlex"><h4>${objeto.nombre}</h4></div><div class="precio cFlex"><h4>${objeto.precio}</h4></div></div>`;
     section.appendChild(div);
 }

@@ -19,7 +19,7 @@ cards.push(new card(4, "obra4", 130, "desc obra4"));
 for(let i of cards) {
     let section = document.getElementById("containerO");
     let div = document.createElement("div");
-    div.innerHTML = `<a href="index2.html"><div class="obra"><h4>${i.nombre}</h4><h5>${i.precio}</h5></div></a>`;
+    div.innerHTML = `<a href="index2.html"><div class="obra cFlex"><h4>${i.nombre}</h4><h5>${i.precio}</h5></div></a>`;
     section.appendChild(div);
 }
 
