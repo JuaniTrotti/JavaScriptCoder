@@ -1,36 +1,32 @@
+@import './cards';
+@import './general';
+@import '../componentes/main';
+@import '../componentes/header';
+
 /* mediaQuery */
 /* //////////////////////////////////////////////////////////////////////////////// */
 @media screen and (min-width: 1800px) {
     .containerBody {
         justify-content: center;
         flex-grow: 1;
+
+        @include main;
+
+        @include card;
+
+        @include pagina;
     }
-    
-        .pagina {
-            max-width: 1760px;
-            flex-basis: 1760px;
-            margin: 0 80px;
-            // border: 1px solid white;
-        
-            flex-direction: column;
-            align-items: center;
-        }
 }   
 
 @media screen and (max-width: 1800px) and (min-width: 1200px) {
     .containerBody {
         justify-content: center;
 
-        .pagina {
-            max-width: 1040px;
-            flex-basis: 1040px;
-            margin: 0 80px;
-            // border: 1px solid white;
-        
-            flex-direction: column;
-            align-items: center;
-        }
-        
+        @include main1200;
+
+        @include pagina1200;
+
+        @include card1200;  
     }
 }
 /* //////////////////////////////////////////////////////////////////////////////// */

@@ -1,5 +1,29 @@
 /* general */
 /* //////////////////////////////////////////////////////////////////////////////// */
+@mixin pagina {
+    .pagina {
+        max-width: 1760px;
+        flex-basis: 1760px;
+        margin: 0 80px;
+        // border: 1px solid white;
+    
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@mixin pagina1200 {
+    .pagina {
+        width: 100%;
+        margin: 0 5%;
+        border: 1px solid white;
+    
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
 * {
     padding: 0;
     margin: 0;
@@ -21,16 +45,6 @@ body {
 
 .lb {
     color: white;
-}
-
-.pagina {
-    max-width: 1760px;
-    flex-basis: 1760px;
-    margin: 0 80px;
-    // border: 1px solid white;
-
-    flex-direction: column;
-    align-items: center;
 }
 
 .textoHeader {

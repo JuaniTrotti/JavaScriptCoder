@@ -44,14 +44,6 @@ body {
   color: white;
 }
 
-.pagina {
-  max-width: 1760px;
-  flex-basis: 1760px;
-  margin: 0 80px;
-  flex-direction: column;
-  align-items: center;
-}
-
 .textoHeader {
   font-family: var(--font-header);
   font-size: 2rem;
@@ -60,21 +52,6 @@ body {
 /* //////////////////////////////////////////////////////////////////////////////// */
 /* cards */
 /* //////////////////////////////////////////////////////////////////////////////// */
-.containerObras {
-  margin-top: 165px;
-  width: 1600px;
-  justify-content: space-between;
-  gap: 40px;
-  flex-wrap: wrap;
-  flex-grow: 1;
-  border: 1px solid red;
-}
-.containerObras .obra {
-  width: 780px;
-  height: 780px;
-  background-color: gray;
-}
-
 /* //////////////////////////////////////////////////////////////////////////////// */
 /* header */
 /* //////////////////////////////////////////////////////////////////////////////// */
@@ -108,11 +85,70 @@ body {
 /* //////////////////////////////////////////////////////////////////////////////// */
 /* main */
 /* //////////////////////////////////////////////////////////////////////////////// */
-.containerMain {
-  width: 100%;
-  height: 750px;
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* cards */
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* general */
+/* //////////////////////////////////////////////////////////////////////////////// */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.cFlex {
+  display: flex;
+}
+
+.containerBody {
   justify-content: center;
+  flex-grow: 1;
+}
+
+.lb {
+  color: white;
+}
+
+.textoHeader {
+  font-family: var(--font-header);
+  font-size: 2rem;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* main */
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* header */
+/* //////////////////////////////////////////////////////////////////////////////// */
+.containerHeader {
+  width: 100%;
+  height: 165px;
   align-items: center;
+}
+.containerHeader .header {
+  align-items: center;
+  width: 100%;
+  height: 36px;
+}
+.containerHeader .header .botonHam {
+  align-items: center;
+  justify-content: flex-start;
+  width: 50%;
+}
+.containerHeader .header .menuOp {
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+  width: 50%;
+}
+.containerHeader .header .menuOp .menuOpTodo {
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 /* //////////////////////////////////////////////////////////////////////////////// */
@@ -123,8 +159,27 @@ body {
     justify-content: center;
     flex-grow: 1;
   }
-
-  .pagina {
+  .containerBody .containerMain {
+    width: 100%;
+    height: 750px;
+    justify-content: center;
+    align-items: center;
+  }
+  .containerBody .containerObras {
+    margin-top: 165px;
+    width: 1600px;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    border: 1px solid red;
+  }
+  .containerBody .containerObras .obra {
+    width: 780px;
+    height: 780px;
+    background-color: gray;
+  }
+  .containerBody .pagina {
     max-width: 1760px;
     flex-basis: 1760px;
     margin: 0 80px;
@@ -136,12 +191,23 @@ body {
   .containerBody {
     justify-content: center;
   }
+  .containerBody .containerMain {
+    width: 100%;
+    height: 750px;
+    margin: 0 5%;
+    border: 1px solid white;
+    justify-content: center;
+    align-items: center;
+  }
   .containerBody .pagina {
-    max-width: 1040px;
-    flex-basis: 1040px;
-    margin: 0 80px;
+    width: 100%;
+    margin: 0 5%;
+    border: 1px solid white;
     flex-direction: column;
     align-items: center;
+  }
+  .containerBody .containerObras {
+    display: none;
   }
 }
 /* //////////////////////////////////////////////////////////////////////////////// */

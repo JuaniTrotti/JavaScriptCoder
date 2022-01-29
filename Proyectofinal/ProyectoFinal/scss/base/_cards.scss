@@ -1,19 +1,29 @@
 /* cards */
 /* //////////////////////////////////////////////////////////////////////////////// */
-.containerObras {
-    margin-top: 165px;
-    width: 1600px;
-    justify-content: space-between;
-    gap: 40px;
-    flex-wrap: wrap;
-    flex-grow: 1;
-
-    border: 1px solid red;
-
-    .obra {
-        width: 780px;
-        height: 780px;
-        background-color: gray;
+@mixin card {
+    .containerObras {
+        margin-top: 165px;
+        width: 1600px;
+        justify-content: space-between;
+        gap: 40px;
+        flex-wrap: wrap;
+        flex-grow: 1;
+    
+        border: 1px solid red;
+    
+        .obra {
+            width: 780px;
+            height: 780px;
+            background-color: gray;
+        }
     }
 }
+
+@mixin card1200 {
+    .containerObras {
+        display: none;
+        
+    }
+}
+
 /* //////////////////////////////////////////////////////////////////////////////// */
