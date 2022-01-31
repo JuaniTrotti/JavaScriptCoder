@@ -51,4 +51,18 @@ body {
     font-family: var(--font-header);
     font-size: 1.3rem;
 }
+
+@mixin layer1 {
+    z-index: 1;
+    background-color: blanchedalmond;
+}
+
+@mixin layer2 {
+    z-index: 2;
+}
+
+@mixin layer3 {
+    z-index: 3;
+    background-color: blue;
+}
 /* //////////////////////////////////////////////////////////////////////////////// */
