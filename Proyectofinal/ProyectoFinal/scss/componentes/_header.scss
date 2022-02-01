@@ -21,10 +21,15 @@
             justify-content: flex-start;
             width: 50%;
 
-            gap: 30px;
+            gap: 40px;
 
             position: fixed;
             top: 28px;
+        }
+
+        .logoHome {
+            align-items: center;
+            justify-content: center;
         }
 
         .menuOp {
