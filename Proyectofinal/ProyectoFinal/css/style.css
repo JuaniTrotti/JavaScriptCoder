@@ -6,14 +6,26 @@
   font-display: swap;
 }
 @font-face {
-  font-family: "inter-extralight-italic";
-  src: url(../fonts/InterWeb/Inter-ExtraLightItalic.woff2) format("woff2");
+  font-family: "inter-thin-italic";
+  src: url(../fonts/InterWeb/Inter-ThinItalic.woff2) format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "inter-semi-bold";
+  src: url(../fonts/InterWeb/inter-semibold.woff2) format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "inter-italic";
+  src: url(../fonts/InterWeb/inter-italic.woff2) format("woff2");
   font-display: swap;
 }
 /* //////////////////////////////////////////////////////////////////////////////// */
 :root {
   --font-header: inter-light-italic;
-  --font-texto: inter-extralight-italic;
+  --font-texto: inter-thin-italic;
+  --font-semi-bold: inter-semi-bold;
+  --font-italic-precio: inter-italic ;
 }
 
 /* //////////////////////////////////////////////////////////////////////////////// */
@@ -49,6 +61,22 @@ body {
   font-size: 1.3rem;
 }
 
+.textoDimensiones {
+  font-family: var(--font-texto);
+  font-size: 2rem;
+  color: #e4e4e4;
+}
+
+.textoTituloObra {
+  font-family: var(--font-semi-bold);
+  font-size: 8rem;
+}
+
+.textoPrecio {
+  font-family: var(--font-texto);
+  font-size: 4rem;
+}
+
 /* //////////////////////////////////////////////////////////////////////////////// */
 /* general */
 /* //////////////////////////////////////////////////////////////////////////////// */
@@ -77,6 +105,22 @@ body {
 .textoHeader {
   font-family: var(--font-header);
   font-size: 1.3rem;
+}
+
+.textoDimensiones {
+  font-family: var(--font-texto);
+  font-size: 2rem;
+  color: #e4e4e4;
+}
+
+.textoTituloObra {
+  font-family: var(--font-semi-bold);
+  font-size: 8rem;
+}
+
+.textoPrecio {
+  font-family: var(--font-texto);
+  font-size: 4rem;
 }
 
 /* //////////////////////////////////////////////////////////////////////////////// */
@@ -110,6 +154,22 @@ body {
 .textoHeader {
   font-family: var(--font-header);
   font-size: 1.3rem;
+}
+
+.textoDimensiones {
+  font-family: var(--font-texto);
+  font-size: 2rem;
+  color: #e4e4e4;
+}
+
+.textoTituloObra {
+  font-family: var(--font-semi-bold);
+  font-size: 8rem;
+}
+
+.textoPrecio {
+  font-family: var(--font-texto);
+  font-size: 4rem;
 }
 
 /* //////////////////////////////////////////////////////////////////////////////// */
@@ -173,6 +233,22 @@ body {
 .textoHeader {
   font-family: var(--font-header);
   font-size: 1.3rem;
+}
+
+.textoDimensiones {
+  font-family: var(--font-texto);
+  font-size: 2rem;
+  color: #e4e4e4;
+}
+
+.textoTituloObra {
+  font-family: var(--font-semi-bold);
+  font-size: 8rem;
+}
+
+.textoPrecio {
+  font-family: var(--font-texto);
+  font-size: 4rem;
 }
 
 /* //////////////////////////////////////////////////////////////////////////////// */
@@ -181,23 +257,6 @@ body {
 /* //////////////////////////////////////////////////////////////////////////////// */
 /* itemcompra */
 /* //////////////////////////////////////////////////////////////////////////////// */
-.fotoO {
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 600px;
-  margin: 0 120px;
-}
-.fotoO .containerImg {
-  width: 500px;
-  height: 500px;
-}
-.fotoO .containerImg .imgO {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 /* //////////////////////////////////////////////////////////////////////////////// */
 /* general */
 /* //////////////////////////////////////////////////////////////////////////////// */
@@ -226,6 +285,22 @@ body {
 .textoHeader {
   font-family: var(--font-header);
   font-size: 1.3rem;
+}
+
+.textoDimensiones {
+  font-family: var(--font-texto);
+  font-size: 2rem;
+  color: #e4e4e4;
+}
+
+.textoTituloObra {
+  font-family: var(--font-semi-bold);
+  font-size: 8rem;
+}
+
+.textoPrecio {
+  font-family: var(--font-texto);
+  font-size: 4rem;
 }
 
 /* //////////////////////////////////////////////////////////////////////////////// */
@@ -261,6 +336,22 @@ body {
   font-size: 1.3rem;
 }
 
+.textoDimensiones {
+  font-family: var(--font-texto);
+  font-size: 2rem;
+  color: #e4e4e4;
+}
+
+.textoTituloObra {
+  font-family: var(--font-semi-bold);
+  font-size: 8rem;
+}
+
+.textoPrecio {
+  font-family: var(--font-texto);
+  font-size: 4rem;
+}
+
 /* //////////////////////////////////////////////////////////////////////////////// */
 /* general */
 /* //////////////////////////////////////////////////////////////////////////////// */
@@ -289,6 +380,22 @@ body {
 .textoHeader {
   font-family: var(--font-header);
   font-size: 1.3rem;
+}
+
+.textoDimensiones {
+  font-family: var(--font-texto);
+  font-size: 2rem;
+  color: #e4e4e4;
+}
+
+.textoTituloObra {
+  font-family: var(--font-semi-bold);
+  font-size: 8rem;
+}
+
+.textoPrecio {
+  font-family: var(--font-texto);
+  font-size: 4rem;
 }
 
 /* //////////////////////////////////////////////////////////////////////////////// */
@@ -324,6 +431,22 @@ body {
   font-size: 1.3rem;
 }
 
+.textoDimensiones {
+  font-family: var(--font-texto);
+  font-size: 2rem;
+  color: #e4e4e4;
+}
+
+.textoTituloObra {
+  font-family: var(--font-semi-bold);
+  font-size: 8rem;
+}
+
+.textoPrecio {
+  font-family: var(--font-texto);
+  font-size: 4rem;
+}
+
 /* //////////////////////////////////////////////////////////////////////////////// */
 /* header */
 /* //////////////////////////////////////////////////////////////////////////////// */
@@ -357,6 +480,9 @@ body {
   gap: 30px;
 }
 
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* itemcompra */
+/* //////////////////////////////////////////////////////////////////////////////// */
 /* //////////////////////////////////////////////////////////////////////////////// */
 /* mediaQuery */
 /* //////////////////////////////////////////////////////////////////////////////// */
@@ -395,6 +521,42 @@ body {
     margin: 0 80px;
     flex-direction: column;
     align-items: center;
+  }
+  .containerBody .fotoO {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    margin: 0 120px;
+  }
+  .containerBody .fotoO .containerImg {
+    width: 500px;
+    height: 500px;
+  }
+  .containerBody .fotoO .containerImg .imgO {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .containerBody .tituloO {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .containerBody .tituloO .tituloContainer {
+    width: 100%;
+    margin: 40px 90px 0 90px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .containerBody .tituloO .tituloContainer .nyd {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .containerBody .tituloO .tituloContainer .precio {
+    align-items: center;
+    justify-content: flex-end;
   }
 }
 @media screen and (max-width: 1800px) and (min-width: 1200px) {

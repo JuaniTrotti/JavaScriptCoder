@@ -2,6 +2,7 @@
 @import './general';
 @import '../componentes/main';
 @import '../componentes/header';
+@import '../pages/itemCompra';
 
 /* mediaQuery */
 /* //////////////////////////////////////////////////////////////////////////////// */
@@ -15,6 +16,10 @@
         @include card;
 
         @include pagina;
+
+        @include fotoItemCompra;
+
+        @include tituloItemCompra;
     }
 }   
 

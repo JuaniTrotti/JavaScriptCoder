@@ -6,14 +6,30 @@
     font-display: swap;
   }
   @font-face {
-    font-family: "inter-extralight-italic";
-    src: url(../fonts/InterWeb/Inter-ExtraLightItalic.woff2) format("woff2");
+    font-family: "inter-thin-italic";
+    src: url(../fonts/InterWeb/Inter-ThinItalic.woff2) format("woff2");
     font-display: swap;
   }
+
+  @font-face {
+    font-family: "inter-semi-bold";
+    src: url(../fonts/InterWeb/inter-semibold.woff2) format("woff2");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "inter-italic";
+    src: url(../fonts/InterWeb/inter-italic.woff2) format("woff2");
+    font-display: swap;
+  }
+
   /* //////////////////////////////////////////////////////////////////////////////// */
   :root {
     --font-header: inter-light-italic;
-    --font-texto: inter-extralight-italic;
+    --font-texto: inter-thin-italic;
+    --font-semi-bold: inter-semi-bold;
+    --font-italic-precio: inter-italic
   }
+
   
 /* //////////////////////////////////////////////////////////////////////////////// */

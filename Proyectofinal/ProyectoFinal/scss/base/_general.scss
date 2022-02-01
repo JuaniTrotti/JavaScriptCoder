@@ -65,4 +65,20 @@ body {
     z-index: 3;
     background-color: blue;
 }
+
+.textoDimensiones {
+    font-family: var(--font-texto);
+    font-size: 2rem;
+    color: rgb(228, 228, 228);
+}
+
+.textoTituloObra {
+    font-family: var(--font-semi-bold);
+    font-size: 8rem;
+}
+
+.textoPrecio {
+    font-family: var(--font-texto);
+    font-size: 4rem;
+}
 /* //////////////////////////////////////////////////////////////////////////////// */
