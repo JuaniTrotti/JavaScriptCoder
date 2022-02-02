@@ -1,0 +1,18 @@
+// jquery
+
+    libreria para js, para cargarla usamos un url o localmente.
+
+    // con esta linea de codigo usamos la libreria de forma remota
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+// selectores
+
+    $("#id")  \\ getElementById
+    $(".clase")  \\ getElementsByClassName
+    $("tag")  \\ getElementsByTagName 
+
+    $("div, p") \\ para acceder a mas de un tag en una sola llamada
+
+    $("div.clase") \\ sirve para combinar, va a traer los div que tengas la clase y si pones uno separado es el hijo $("div.clase p"), p tiene que ser 
+                      hijo de div.clase
+
