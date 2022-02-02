@@ -1,0 +1,54 @@
+// jquery
+
+    libreria para js, para cargarla usamos un url o localmente.
+
+    // con esta linea de codigo usamos la libreria de forma remota
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+// selectores
+
+    $("#id")  \\ getElementById
+    $(".clase")  \\ getElementsByClassName
+    $("tag")  \\ getElementsByTagName 
+
+    $("div, p") \\ para acceder a mas de un tag en una sola llamada
+
+    $("div.clase") \\ sirve para combinar, va a traer los div que tengas la clase y si pones uno separado es el hijo $("div.clase p"), p tiene que ser 
+                      hijo de div.clase
+
+// selectores avanzados
+
+    $("elselectorquequieras:last")  \\ ultimo elemento de la pagina
+    $("elselectorquequieras:first-child")  \\ todos los <elselectorquequieras> que sean primeros hijos
+    $("elselectorquequieras:last-child")  \\ todos los <elselectorquequieras> que sean los ultimos hijos
+    $("elselectorquequieras:only-child")  \\ todos los <elselectorquequieras> que sean hijois unicos
+    $("elselectorquequieras:nth-child(3)")  \\ todos los <elselectorquequieras> que sean el tercer elemento
+    $("elselectorquequieras:nth-child(odd)")  \\ todos los <elselectorquequieras> que sean impares
+    $("elselectorquequieras:nth-child(even)")  \\ todos los <elselectorquequieras> que sean pares
+    $("elselectorquequieras:nth-child(3n)")  \\ selecciona cada tercer elemento <elselectorquequieras>
+
+// selectores para formularios
+
+    $(":text");
+    $(":checkbox");
+    $(":radio");
+    $("image");
+    $(":submit");
+    $(":reset );
+    $(":password");
+    $(":file");
+    $(":input");   //Selecciona los elementos input, textarea, select y button
+    $(":button");   //Selecciona los elementos button e input con atributo "type"="button"
+    $(":enabled");  //Selecciona los elementos del formulario activados
+    $(":disabled");  //Selecciona los elementos del formulario desactivados
+    $(":checked");  //Selecciona los radio buttons y checkboxes que están pulsados
+    $(":selected");  //Elementos de una lista de opciones que este seleccionados
+
+// crear elementos e indexar con jquery
+
+    en vez de usar el appendChild usamos append()
+
+    etiqueta donde queres enlazar.append("lo que queres enlazar")
+    ej::
+
+        $("body").append("<p>Hola<br><strong>Mundo</strong></p>");
