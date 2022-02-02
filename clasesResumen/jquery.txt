@@ -52,3 +52,51 @@
     ej::
 
         $("body").append("<p>Hola<br><strong>Mundo</strong></p>");
+
+
+// eventos
+
+    //evento DOMcontentLoaded
+
+    windows.addEventListener("DOMcontentLoaded", function() {
+        console.log("el DOM esta listo")
+    })
+
+    en jquery es mas facil ==
+
+    $(document).ready(function() {
+        console.log("el DOM esta listo")
+    })
+
+    forma mas corta
+
+    $(function() {
+        console.log("el DOM esta listo")
+    }) 
+
+    $(() => {
+        console.log("el DOM esta listo")
+    })
+
+    //evento on == addEventListener
+
+    $("#boton").on("click", function() {
+        console.log("toque el boton")
+    })
+
+            //dblclick == es un evento que detecta doble click//
+
+    //eventos short
+
+    en vez de llamar a on("evento") 
+    .on("click") == .click()
+
+    .on("change") == .change()
+
+    //evento submit == sirve para enviar el formulario
+        $("#myForm").submit()
+
+    //metodo trigger()
+
+        dispara un evento especifico
+
