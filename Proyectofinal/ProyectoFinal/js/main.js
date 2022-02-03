@@ -19,13 +19,12 @@ obras.push(new card(3, "obra3", 830, desc[2], "obra3.jfif", "45cm x 45cm"));
 obras.push(new card(4, "obra4", 130, desc[3], "obra4.jfif", "45cm x 45cm"));
 
  for(let i of obras) {
-    let section = document.getElementById("containerO");
-    let div = document.createElement("div");
-    div.innerHTML = `<a href="./html/itemCompra.html" id="${i.id}" class="links"><div class="obra cFlex"><img src="./img/jpeg/${i.img}" class="imagenObra"></div></a>`;
-    section.appendChild(div);
+    $("#containerO").append(`<a href="./html/itemCompra.html" id="${i.id}" class="links"><div class="obra cFlex"><img src="./img/jpeg/${i.img}" class="imagenObra"></div></a>`);
 }
 
-var links = document.getElementsByClassName("links");
+// var links = document.getElementsByClassName("links");
+
+var links = $(".links");
 
 for (let i=0; i < links.length; i++) {
     links[i].addEventListener("click", function() {
@@ -34,6 +33,3 @@ for (let i=0; i < links.length; i++) {
         localStorage.setItem('href', fotoJSON);
     })
 }
-
-
-
