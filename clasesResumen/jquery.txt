@@ -90,7 +90,7 @@
 
     en vez de llamar a on("evento") 
     .on("click") == .click()
-
+    2
     .on("change") == .change()
 
     //evento submit == sirve para enviar el formulario

@@ -1,0 +1,60 @@
+//ajax
+
+    es una forma de recibir e inviar desactivados
+
+    //ajax con jquery
+
+    en jquery tiene metodos que tienen dos parametros
+    (el url, funcion)
+
+    var urlget = "https://sajkdnasdas.com.sadasda/post";
+    $.get(urlget, function(data, status) {
+        if (status === "succes") {
+            ssss
+            ssssss
+            ssssssss
+        }
+    });
+
+
+//api 
+
+    application programming interfaces, es un conjunto de reglas y especificaciones
+    que las aplicaciones pueden seguir para comunicarse entre ellas. Usamos ajax   
+    para consumir esas api's
+
+    hay api privadas y publicas, las privadas te piden una validacion antes de 
+    recibir o dar datos.
+
+
+    se puede usar una version simplificada 
+
+
+    //metodo post
+    $("#btn").click(() => {
+        $.ajax ({
+            method: "POST",
+            url: "lknsdlkfnsdklfns",
+            data: {nombre:"ana", profesion:"programador"},
+            succes: function() {
+                funcion.....
+            },
+            error: function() {
+                funcion.....
+            }
+        });
+    });
+
+    //metodo get
+    $("#btn").click(() => {
+        $.ajax ({
+            method: "GET",
+            url: "lknsdlkfnsdklfns",
+            succes: function() {
+                funcion.....
+            },
+            error: function() {
+                funcion.....
+            }
+        });
+    });
