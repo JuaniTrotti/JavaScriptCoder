@@ -20,7 +20,13 @@
         @include fotoItemCompra;
 
         @include tituloItemCompra;
+
+        @include descItemCompra;
+
+        @include btn;
     }
+
+    @include menuHam;
 }   
 
 @media screen and (max-width: 1800px) and (min-width: 1200px) {

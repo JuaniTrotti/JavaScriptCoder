@@ -14,11 +14,13 @@
             <section class="containerHeader cFlex">
                 <header class="header cFlex">
                     <section class="botonHam cFlex lb">
-                        <svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="30" height="4" rx="2" fill="white"/>
-                            <rect y="20" width="30" height="4" rx="2" fill="white"/>
-                            <rect y="10" width="22" height="4" rx="2" fill="white"/>
-                        </svg>
+                        <div class="menuHamBtn">
+                            <svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="30" height="4" rx="2" fill="white" />
+                                <rect y="20" width="30" height="4" rx="2" fill="white" />
+                                <rect y="10" width="22" height="4" rx="2" fill="white" />
+                            </svg>
+                        </div>
                     </section>
                     <section class="menuOp cFlex lb">
                         <div class="menuOpTodo cFlex">
@@ -44,9 +46,21 @@
         </div>
     </div>
 
+    <div class="menuHam hide cFlex">
+        <div class="containerHam cFlex">
+            <section class="infoHam cFlex">
+                <h2 class="textoTitulo"></h2>
+                <h2 class="textoTitulo"></h2>
+                <h2 class="textoTitulo"></h2>
+            </section>
+            <section class="logoHam">
+            </section>
+        </div>
+    </div>
+
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="module" src="./js/main.js"></script>
-    <!-- <script type="module" src="./js/card.js"></script> -->
+    <script type="module" src="./js/general.js"></script>
 </body>
 </html>

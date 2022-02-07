@@ -13,7 +13,7 @@ const desc = [
 // funciones
 
 //main
-obras.push(new card(1, "obra1", 230, desc[0], "obra1.jfif", "45cm x 45cm"));
+obras.push(new card(1, "obra1jhgd", 230, desc[0], "obra1.jfif", "45cm x 45cm"));
 obras.push(new card(2, "obra2", 530, desc[1], "obra2.jfif", "45cm x 45cm"));
 obras.push(new card(3, "obra3", 830, desc[2], "obra3.jfif", "45cm x 45cm"));
 obras.push(new card(4, "obra4", 130, desc[3], "obra4.jfif", "45cm x 45cm"));
@@ -33,3 +33,4 @@ for (let i=0; i < links.length; i++) {
         localStorage.setItem('href', fotoJSON);
     })
 }
+

@@ -4,7 +4,7 @@ var linkId = JSON.parse(localStorage.getItem('href'));
 // funciones
 function crearFoto(f) {
     $("#obraP").append(`<div class="containerImg cFlex">
-                            <img src="../img/jpeg/${f.img}" alt="" class="imgO">
+                            <img src="../img/jpeg/${f.img}" alt="" class="imgO" id="imgO">
                         </div>`);
 }
 
@@ -24,9 +24,32 @@ function crearTitulo(t) {
                         </div>`);
 }
 
+function crearDesc() {
+
+}
+
+function crearBot() {
+
+}
+
 // main
 console.log(linkId);
 
 
 crearFoto(linkId);
 crearTitulo(linkId);
+crearDesc();
+crearBot();
+
+const foto = document.querySelector(".fotoO");
+
+
+foto.onclick = function() {
+    foto.classList.toggle("fotoAmpliada");
+    $(".containerHeader").toggle();
+    $(".tituloO").toggle();
+    $(".descO").toggle();
+    $(".btoO").toggle();
+
+}
+

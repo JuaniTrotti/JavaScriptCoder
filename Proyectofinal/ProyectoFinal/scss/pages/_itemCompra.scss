@@ -1,5 +1,6 @@
 /* itemcompra */
 /* //////////////////////////////////////////////////////////////////////////////// */
+
 @mixin fotoItemCompra {
     .fotoO {
         align-items: center;
@@ -17,6 +18,27 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                border-radius: 1.5rem;
+            }
+        }
+    }
+
+    .fotoAmpliada {
+        align-items: center;
+        justify-content: center;
+    
+        width: 100vh;
+        height: 100vh;
+
+        .containerImg {
+            width: 80vh;
+            height: 80vh;
+    
+            .imgO {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 1.5rem;
             }
         }
     }
@@ -31,7 +53,7 @@
 
         .tituloContainer {
             width: 100%;
-            margin: 40px 90px 0 90px;
+            margin: 40px 120px 0 120px;
     
             justify-content: space-between;
             align-items: center;
@@ -50,4 +72,59 @@
     }
 }
 
+@mixin descItemCompra {
+    .descO {
+        width: 100%;
+        
+        .desContainer {
+            width: 100%;
+            margin: 80px 120px 0 120px;
+
+            .dp {
+                width: 100%;
+            }
+
+        }
+    }
+}
+
+@mixin btn {
+    .btoO {
+        width: 100%;
+        justify-content: center;
+
+        margin: 100px 0;
+
+        .btnContainer {
+            width: 750px;
+            justify-content: space-between;
+
+            .btn1 {
+                width: 350px;
+                height: 100px;
+                background-color: white;
+
+                justify-content: center;
+                align-items: center;
+
+                .tb1 {
+                    color: black;
+                }
+            }
+
+            .btn2 {
+                width: 350px;
+                height: 100px;
+                background-color: rgb(81, 255, 150);
+
+                justify-content: center;
+                align-items: center;
+
+                .tb2 {
+                    color: black;
+                }
+            }
+        }
+    }
+}
 /* //////////////////////////////////////////////////////////////////////////////// */
