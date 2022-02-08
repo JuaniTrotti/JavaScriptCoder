@@ -96,9 +96,27 @@ body::-webkit-scrollbar-thumb {
     border-radius: 1em;
 }
 
+
+
+.link {
+    text-decoration: none;
+
+    &:visited {
+        color: white;
+    }
+
+    &:hover {
+        color: white;
+    }
+
+    &:active {
+        color: white;
+    }
+}
+
 @mixin menuHam {
     .hide {
-        margin-left: -40vw;
+        margin-left: -30vw;
     }
 
     .menuHam {
@@ -109,11 +127,12 @@ body::-webkit-scrollbar-thumb {
         left: 0;
 
         height: 100vh;
-        width: 22vw;
+        width: 30vw;
 
-        transition: all 0.2s linear;
+        transition: all 0.2s ease-in;
 
-        background-color: rgb(131, 78, 78);
+        background-color: rgb(226, 226, 226);
+
 
         .containerHam {
             width: 100%;
@@ -124,7 +143,7 @@ body::-webkit-scrollbar-thumb {
             align-items: center;
             justify-content: space-between;
 
-            margin: 40px;
+            margin: 100px;
 
             .infoHam {
                 flex-direction: column;
@@ -134,7 +153,52 @@ body::-webkit-scrollbar-thumb {
                 gap: 20px;
 
                 color: black;
+
+                .titulo {
+                    
+                    .textoTituloHam {
+                        font-family: var(--font-semi-bold);
+                        font-size: 5rem;
+                    }
+                }
+
+                .opHam {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+
+                    gap: 30px;
+                }
             }
+        }
+    }
+
+    .fondoMenu {
+        background-color: rgb(56, 56, 56, 0.2);
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        width: 100vw;
+
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+    }
+
+    .hideFondo {
+        display: none;
+    }
+    
+    .fade-in {
+        display: block;
+        animation: fadeIn ease 0.2s;
+    }
+
+    @keyframes fadeIn {
+        0% {
+          opacity:0;
+        }
+        100% {
+          opacity:1;
         }
     }
 }
