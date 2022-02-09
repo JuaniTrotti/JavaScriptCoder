@@ -4,7 +4,7 @@ var linkId = JSON.parse(localStorage.getItem('href'));
 // funciones
 function crearFoto(f) {
     $("#obraP").append(`<div class="containerImg cFlex">
-                            <img src="../img/jpeg/${f.img}" alt="" class="imgO" id="imgO">
+                            <img src="./img/jpeg/${f.img}" alt="" class="imgO" id="imgO">
                         </div>`);
 }
 

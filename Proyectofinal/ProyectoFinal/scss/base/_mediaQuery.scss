@@ -3,6 +3,7 @@
 @import '../componentes/main';
 @import '../componentes/header';
 @import '../pages/itemCompra';
+@import '../pages/cart';
 
 /* mediaQuery */
 /* //////////////////////////////////////////////////////////////////////////////// */
@@ -24,6 +25,8 @@
         @include descItemCompra;
 
         @include btn;
+
+        @include carritoEl;
     }
 
     @include menuHam;

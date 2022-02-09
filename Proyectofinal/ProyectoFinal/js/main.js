@@ -19,7 +19,7 @@ obras.push(new card(3, "obra3", 830, desc[2], "obra3.jfif", "45cm x 45cm"));
 obras.push(new card(4, "obra4", 130, desc[3], "obra4.jfif", "45cm x 45cm"));
 
  for(let i of obras) {
-    $("#containerO").append(`<a href="./html/itemCompra.html" id="${i.id}" class="links"><div class="obra cFlex"><img src="./img/jpeg/${i.img}" class="imagenObra"></div></a>`);
+    $("#containerO").append(`<a href="./itemCompra.html" id="${i.id}" class="links"><div class="obra cFlex"><img src="./img/jpeg/${i.img}" class="imagenObra"></div></a>`);
 }
 
 // var links = document.getElementsByClassName("links");

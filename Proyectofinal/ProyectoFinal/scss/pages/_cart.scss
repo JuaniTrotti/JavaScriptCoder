@@ -1,0 +1,55 @@
+/* cart */
+/* //////////////////////////////////////////////////////////////////////////////// */
+@mixin carritoEl {
+    .carritoContainer {
+        width: 70%;
+        min-height: 50vh;
+
+        margin-top: 50px;
+        
+        justify-content: center;
+        align-items: center;
+
+        .carrito {
+            width: 100%;
+            height: 100%;
+    
+            background-color: rgb(63, 63, 63);
+            border-radius: 1.5rem;
+
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 20px;
+
+            padding: 20px 0;
+    
+            .elementos {
+                justify-content: space-between;
+                height: 80px;
+                width: 100%;
+
+                .nombreEl {
+                    height: 100%;
+                    width: 50%;
+                    background-color: aqua;
+                }
+
+                .cantidadEl {
+                    height: 100%;
+                    width: 25%;
+                    background-color: gray;
+                }
+
+                .precioEl {
+                    height: 100%;
+                    width: 25%;
+                    background-color: rosybrown;
+                }
+            }
+        }
+    }
+    
+
+}
+/* //////////////////////////////////////////////////////////////////////////////// */

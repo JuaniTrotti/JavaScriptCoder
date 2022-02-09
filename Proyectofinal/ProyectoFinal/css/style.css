@@ -375,6 +375,9 @@ body::-webkit-scrollbar-thumb {
 /* itemcompra */
 /* //////////////////////////////////////////////////////////////////////////////// */
 /* //////////////////////////////////////////////////////////////////////////////// */
+/* itemcompra */
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////// */
 /* general */
 /* //////////////////////////////////////////////////////////////////////////////// */
 * {
@@ -715,6 +718,9 @@ body::-webkit-scrollbar-thumb {
 /* itemcompra */
 /* //////////////////////////////////////////////////////////////////////////////// */
 /* //////////////////////////////////////////////////////////////////////////////// */
+/* cart */
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////// */
 /* mediaQuery */
 /* //////////////////////////////////////////////////////////////////////////////// */
 @media screen and (min-width: 1800px) {
@@ -843,6 +849,44 @@ body::-webkit-scrollbar-thumb {
   }
   .containerBody .btoO .btnContainer .btn2 .tb2 {
     color: black;
+  }
+  .containerBody .carritoContainer {
+    width: 70%;
+    min-height: 50vh;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  .containerBody .carritoContainer .carrito {
+    width: 100%;
+    height: 100%;
+    background-color: #3f3f3f;
+    border-radius: 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+  }
+  .containerBody .carritoContainer .carrito .elementos {
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+  }
+  .containerBody .carritoContainer .carrito .elementos .nombreEl {
+    height: 100%;
+    width: 50%;
+    background-color: aqua;
+  }
+  .containerBody .carritoContainer .carrito .elementos .cantidadEl {
+    height: 100%;
+    width: 25%;
+    background-color: gray;
+  }
+  .containerBody .carritoContainer .carrito .elementos .precioEl {
+    height: 100%;
+    width: 25%;
+    background-color: rosybrown;
   }
 
   .hide {
