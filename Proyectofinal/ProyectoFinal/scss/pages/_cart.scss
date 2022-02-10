@@ -23,28 +23,37 @@
             gap: 20px;
 
             padding: 20px 0;
-    
-            .elementos {
-                justify-content: space-between;
-                height: 80px;
+
+            padding: 0 5%;
+
+            .containerElementos {
                 width: 100%;
 
-                .nombreEl {
-                    height: 100%;
-                    width: 50%;
-                    background-color: aqua;
-                }
+                justify-content: center;
+                align-items: center;
 
-                .cantidadEl {
-                    height: 100%;
-                    width: 25%;
-                    background-color: gray;
-                }
-
-                .precioEl {
-                    height: 100%;
-                    width: 25%;
-                    background-color: rosybrown;
+                .elementos {
+                    justify-content: space-between;
+                    height: 80px;
+                    width: 100%;
+    
+                    .nombreEl {
+                        height: 100%;
+                        width: 50%;
+                        background-color: aqua;
+                    }
+    
+                    .cantidadEl {
+                        height: 100%;
+                        width: 25%;
+                        background-color: gray;
+                    }
+    
+                    .precioEl {
+                        height: 100%;
+                        width: 25%;
+                        background-color: rosybrown;
+                    }
                 }
             }
         }

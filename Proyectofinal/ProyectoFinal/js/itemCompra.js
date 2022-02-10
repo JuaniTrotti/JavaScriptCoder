@@ -1,12 +1,13 @@
 // variables
 var linkId = JSON.parse(localStorage.getItem('href'));
+const foto = document.querySelector(".fotoO");
 
 // funciones
 function crearFoto(f) {
     $("#obraP").append(`<div class="containerImg cFlex">
                             <img src="./img/jpeg/${f.img}" alt="" class="imgO" id="imgO">
                         </div>`);
-}
+};
 
 function crearTitulo(t) {
     $("#tituloP").append(`<div class="tituloContainer cFlex">
@@ -22,34 +23,42 @@ function crearTitulo(t) {
                                  <h2 class="textoPrecio">$${t.precio}</h2>
                             </div>
                         </div>`);
-}
+};
 
 function crearDesc() {
 
-}
+};
 
 function crearBot() {
 
-}
-
-// main
-console.log(linkId);
+};
 
 
-crearFoto(linkId);
-crearTitulo(linkId);
-crearDesc();
-crearBot();
+$( document ).ready(function() {
+    console.log( "ready!" );
 
-const foto = document.querySelector(".fotoO");
+    // main
+    console.log(linkId);
 
 
-foto.onclick = function() {
-    foto.classList.toggle("fotoAmpliada");
-    $(".containerHeader").toggle();
-    $(".tituloO").toggle();
-    $(".descO").toggle();
-    $(".btoO").toggle();
+    crearFoto(linkId);
+    crearTitulo(linkId);
+    crearDesc();
+    crearBot();
 
-}
+    foto.onclick = function() {
+        foto.classList.toggle("fotoAmpliada");
+        $(".containerHeader").toggle();
+        $(".tituloO").toggle();
+        $(".descO").toggle();
+        $(".btoO").toggle();
+    }
+
+    $(".btn1").on("click", function() {
+        let idC = `id${linkId.id}`;
+        console.log(idC)
+        const cardJSON = JSON.stringify(linkId.id);
+        localStorage.setItem(idC,cardJSON);
+    });
+});
 

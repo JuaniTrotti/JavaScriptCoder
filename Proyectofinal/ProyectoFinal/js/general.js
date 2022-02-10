@@ -24,27 +24,32 @@ function enableScroll(){
     window.onscroll = null;
 }
 
-// main 
-console.log(iconHam);
-console.log(menuHam);
+
+$( document ).ready(function() {
+    console.log( "ready!" );
+
+    // main 
+    console.log(iconHam);
+    console.log(menuHam);
 
 
 
-iconHam.onclick = function() {
-    if (cont%2 == 0) {
-        menuHam.classList.add("hide");
-        fondoM.classList.remove("fade-in");
-        enableScroll();
-        botonHam.setSpeed(2);
-        botonHam.setDirection(-1);
-        botonHam.play();
-    } else {
-        menuHam.classList.remove("hide");
-        fondoM.classList.add("fade-in"); 
-        disableScroll();
-        botonHam.setSpeed(1);
-        botonHam.setDirection(1);
-        botonHam.play();
+    iconHam.onclick = function() {
+        if (cont%2 == 0) {
+            menuHam.classList.add("hide");
+            fondoM.classList.remove("fade-in");
+            enableScroll();
+            botonHam.setSpeed(2);
+            botonHam.setDirection(-1);
+            botonHam.play();
+        } else {
+            menuHam.classList.remove("hide");
+            fondoM.classList.add("fade-in"); 
+            disableScroll();
+            botonHam.setSpeed(1);
+            botonHam.setDirection(1);
+            botonHam.play();
+        }
+        cont += 1;
     }
-    cont += 1;
-}
+});
