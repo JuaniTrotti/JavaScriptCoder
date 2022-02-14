@@ -7,10 +7,16 @@ function cargar() {
         method: "GET",
         url: "./json/cartData.json",
         success: function(respuesta) {
+            // reinicio el precio final
+            $(".precioFinalCarro").empty();
+
             if (localStorage.getItem("carro") == null) {
                 console.log("el carrito esta vacio");
+                // seteo el precio total en 0
+                $(".precioFinalCarro").append(`<h2 class="textoDimensiones">$0</h2>`) 
             } else {
                 var carroItem = JSON.parse(localStorage.getItem("carro"));
+                var suma = 0;
                 for(let item of carroItem) {
 
                     // use dos formas para crear los elementos del carro
@@ -36,6 +42,9 @@ function cargar() {
                                                                 <div class="borraItem cFlex" id="${i.id}"><h2 class="textoDimensiones">Delete item</h2></div>
                                                                 <div class="precioEl cFlex"><h2 class="textoDimensiones">${i.precio}</h2></div>
                             </div>`)
+                               // total de la compra
+                            suma += parseInt(i.precio);
+
                                // agregar boton para borrar
                             let lll = document.getElementById(i.id);
                             lll.addEventListener("click", function() {
@@ -44,7 +53,8 @@ function cargar() {
                             });
                         };
                     };
-                }; 
+                };
+                $(".precioFinalCarro").append(`<h2 class="textoDimensiones">$ ${suma}</h2>`) 
             };
         },
         error: function(){
@@ -56,6 +66,7 @@ function cargar() {
 // vacia el carrito
 function borrarTodo() {
     $(".containerElementos").empty();
+    cargar();
 }
 
 // elimina el elemento deseado del carrito

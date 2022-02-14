@@ -26,12 +26,25 @@ function crearTitulo(t) {
                         </div>`);
 };
 
-function crearDesc() {
-
+function crearDesc(d) {
+    $(".descO").append(`<div class="desContainer cFlex">
+                        <p class="dp lb textoDimensiones">
+                            ${d.descripcion}
+                        </p>
+                    </div>`);
 };
 
 function crearBot() {
-
+    $(".btoO").append(`<div class="btnContainer cFlex">
+                        <div class="btn1 cFlex">
+                            <h2 class="textoDimensiones tb1">add to cart</h2>
+                        </div>
+                        <a href="./cart.html" class="link">
+                            <div class="btn2 cFlex">
+                                <h2 class="textoDimensiones tb2">buy</h2>
+                            </div>
+                        </a>
+                     </div>`);
 };
 
 
@@ -44,7 +57,7 @@ $( document ).ready(function() {
 
     crearFoto(linkId);
     crearTitulo(linkId);
-    crearDesc();
+    crearDesc(linkId);
     crearBot();
 
     // animacion de ampliar la foto
