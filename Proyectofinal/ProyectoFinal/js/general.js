@@ -14,26 +14,24 @@ const botonHam = lottie.loadAnimation({
 });
 
 // funciones
+// bloquea el scroll
 function disableScroll(){  
     var x = window.scrollX;
     var y = window.scrollY;
     window.onscroll = function(){ window.scrollTo(x, y) };
 }
 
+// desbloquea el scroll
 function enableScroll(){  
     window.onscroll = null;
 }
 
-
+// espero a que el dom este listo
 $( document ).ready(function() {
     console.log( "ready!" );
 
     // main 
-    console.log(iconHam);
-    console.log(menuHam);
-
-
-
+    // animacion del menu Hamburguesa
     iconHam.onclick = function() {
         if (cont%2 == 0) {
             menuHam.classList.add("hide");

@@ -29,8 +29,11 @@
             .containerElementos {
                 width: 100%;
 
+                flex-direction: column;
                 justify-content: center;
-                align-items: center;
+                align-items: flex-start;
+
+                // gap: 5px;
 
                 .elementos {
                     justify-content: space-between;
@@ -40,20 +43,39 @@
                     .nombreEl {
                         height: 100%;
                         width: 50%;
-                        background-color: aqua;
+                        // background-color: aqua;
+
+                        justify-content: flex-start;
+                        align-items: center;
                     }
     
-                    .cantidadEl {
+                    .borraItem {
                         height: 100%;
                         width: 25%;
-                        background-color: gray;
+                        // background-color: gray;
+                        cursor: pointer;
+
+                        justify-content: flex-start;
+                        align-items: center;
                     }
     
                     .precioEl {
                         height: 100%;
                         width: 25%;
-                        background-color: rosybrown;
+                        // background-color: rosybrown;
+
+                        justify-content: flex-end;
+                        align-items: center;
                     }
+                }
+            }
+
+            .opCarro {
+                width: 100%;
+                justify-content: space-between;
+
+                .btnBorrarCarro {
+                    cursor: pointer;
                 }
             }
         }

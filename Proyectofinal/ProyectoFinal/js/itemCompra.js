@@ -1,6 +1,7 @@
 // variables
 var linkId = JSON.parse(localStorage.getItem('href'));
 const foto = document.querySelector(".fotoO");
+const carro = [];
 
 // funciones
 function crearFoto(f) {
@@ -46,6 +47,7 @@ $( document ).ready(function() {
     crearDesc();
     crearBot();
 
+    // animacion de ampliar la foto
     foto.onclick = function() {
         foto.classList.toggle("fotoAmpliada");
         $(".containerHeader").toggle();
@@ -54,11 +56,18 @@ $( document ).ready(function() {
         $(".btoO").toggle();
     }
 
+    // uso un array que almacena los id de las obras que agrego al carrito
     $(".btn1").on("click", function() {
-        let idC = `id${linkId.id}`;
-        console.log(idC)
-        const cardJSON = JSON.stringify(linkId.id);
-        localStorage.setItem(idC,cardJSON);
+        if (localStorage.getItem("carro") == null) {
+            console.log("no existe");
+            carro.push(linkId.id);
+            localStorage.setItem("carro", JSON.stringify(carro));
+        } else {
+            console.log("existe");
+            var carroTemp = JSON.parse(localStorage.getItem('carro'));
+            carroTemp.push(linkId.id);
+            localStorage.setItem("carro", JSON.stringify(carroTemp));
+        };
     });
 });
 

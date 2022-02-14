@@ -526,8 +526,9 @@ body::-webkit-scrollbar-thumb {
   }
   .containerBody .carritoContainer .carrito .containerElementos {
     width: 100%;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
   .containerBody .carritoContainer .carrito .containerElementos .elementos {
     justify-content: space-between;
@@ -537,17 +538,28 @@ body::-webkit-scrollbar-thumb {
   .containerBody .carritoContainer .carrito .containerElementos .elementos .nombreEl {
     height: 100%;
     width: 50%;
-    background-color: aqua;
+    justify-content: flex-start;
+    align-items: center;
   }
-  .containerBody .carritoContainer .carrito .containerElementos .elementos .cantidadEl {
+  .containerBody .carritoContainer .carrito .containerElementos .elementos .borraItem {
     height: 100%;
     width: 25%;
-    background-color: gray;
+    cursor: pointer;
+    justify-content: flex-start;
+    align-items: center;
   }
   .containerBody .carritoContainer .carrito .containerElementos .elementos .precioEl {
     height: 100%;
     width: 25%;
-    background-color: rosybrown;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .containerBody .carritoContainer .carrito .opCarro {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .containerBody .carritoContainer .carrito .opCarro .btnBorrarCarro {
+    cursor: pointer;
   }
 
   .hide {
