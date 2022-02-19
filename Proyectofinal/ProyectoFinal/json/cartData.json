@@ -2,7 +2,9 @@
     {
         "id": "1",
         "nombre": "obra1",
-        "precio": "4000"
+        "precio": "4000",
+        "img": "",
+        "desc": ""
     },
     {
         "id": "2",
@@ -17,6 +19,7 @@
     {
         "id": "4",
         "nombre": "obra4",
-        "precio": "8000"
+        "precio": "8000",
+        "img": "https://images.unsplash.com/photo-1645115167984-e683a2ef75b9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
     }
 ]

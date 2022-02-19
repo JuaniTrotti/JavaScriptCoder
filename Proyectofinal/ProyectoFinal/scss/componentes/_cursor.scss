@@ -1,0 +1,31 @@
+/* cursor */
+/* //////////////////////////////////////////////////////////////////////////////// */
+.noCursor {
+    cursor: none;
+}
+
+.htmlCursorContainer {
+    --size: 25px;
+    position: fixed;
+    width: var(--size);
+    height: var(--size);
+    top: calc(var(--size)/-2);
+    left: calc(var(--size)/-2);
+    transform: translate(var(--cursorx, -100px), var(--cursory, -100px)) translateZ(0);
+    pointer-events: none;
+    transition: none;
+    z-index: 11000;
+    will-change: transform;
+
+    .htmlCursor {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 1px solid white;
+        opacity: 1;
+        transform: scale(1) translateZ(0);
+    }
+}
+
+/* //////////////////////////////////////////////////////////////////////////////// */

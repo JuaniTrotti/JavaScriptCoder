@@ -11,23 +11,17 @@ function crearFoto(f) {
 };
 
 function crearTitulo(t) {
-    $("#tituloP").append(`<div class="tituloContainer cFlex">
-                            <div class="nyd cFlex">
-                                <div class="nombreO lb cFlex">
-                                    <h2 class="textoTituloObra">${t.nombre}</h2>
-                                </div>
-                                <div class="dimensionO lb cFlex">
-                                    <h2 class="textoDimensiones">${t.dim}</h2>
-                                </div>
-                            </div>
-                            <div class="precio lb cFlex">
-                                 <h2 class="textoPrecio">$${t.precio}</h2>
-                            </div>
-                        </div>`);
+    $("#titulo").append(`<div class="nombreO lb cFlex">
+                            <h2 class="textoTituloObra tm">${t.nombre}</h2>                        
+                        </div>`)
+
+    $("#dim").append(`<div class="dimensionO lb cFlex">
+                            <h2 class="textoDimensiones">${t.dim} - $${t.precio}</h2>                       
+                        </div>`)
 };
 
 function crearDesc(d) {
-    $(".descO").append(`<div class="desContainer cFlex">
+    $("#descripcion").append(`<div class="desContainer cFlex">
                         <p class="dp lb textoDimensiones">
                             ${d.descripcion}
                         </p>
@@ -35,11 +29,11 @@ function crearDesc(d) {
 };
 
 function crearBot() {
-    $(".btoO").append(`<div class="btnContainer cFlex">
+    $("#botonesCompra").append(`<div class="btnContainer cFlex">
                         <div class="btn1 cFlex">
                             <h2 class="textoDimensiones tb1">add to cart</h2>
                         </div>
-                        <a href="./cart.html" class="link">
+                        <a href="./cart.html" class="link noCursor">
                             <div class="btn2 cFlex">
                                 <h2 class="textoDimensiones tb2">buy</h2>
                             </div>
@@ -59,15 +53,6 @@ $( document ).ready(function() {
     crearTitulo(linkId);
     crearDesc(linkId);
     crearBot();
-
-    // animacion de ampliar la foto
-    foto.onclick = function() {
-        foto.classList.toggle("fotoAmpliada");
-        $(".containerHeader").toggle();
-        $(".tituloO").toggle();
-        $(".descO").toggle();
-        $(".btoO").toggle();
-    }
 
     // uso un array que almacena los id de las obras que agrego al carrito
     $(".btn1").on("click", function() {

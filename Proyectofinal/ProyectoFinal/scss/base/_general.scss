@@ -23,14 +23,13 @@
     }
 }
 
-
 * {
     padding: 0;
     margin: 0;
 }
 
 body {
-    background-color: black;
+    background-color: rgb(10, 9, 17);
 }
 
 
@@ -190,7 +189,7 @@ body::-webkit-scrollbar-thumb {
     
     .fade-in {
         display: block;
-        animation: fadeIn ease 0.2s;
+        animation: fadeIn ease 0.5s;
     }
 
     @keyframes fadeIn {
@@ -202,4 +201,5 @@ body::-webkit-scrollbar-thumb {
         }
     }
 }
+
 /* //////////////////////////////////////////////////////////////////////////////// */

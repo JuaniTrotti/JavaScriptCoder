@@ -1,129 +1,178 @@
 /* itemcompra */
 /* //////////////////////////////////////////////////////////////////////////////// */
 
-@mixin fotoItemCompra {
-    .fotoO {
-        align-items: center;
-        justify-content: center;
+// @mixin fotoItemCompra {
+//     .fotoO {
+//         align-items: center;
+//         justify-content: center;
     
+//         width: 100%;
+//         height: 600px;
+//         margin: 0 120px;
+    
+//         .containerImg {
+//             width: 500px;
+//             height: 500px;
+    
+//             .imgO {
+//                 width: 100%;
+//                 height: 100%;
+//                 object-fit: cover;
+//                 border-radius: 1.5rem;
+//             }
+//         }
+//     }
+
+//     .fotoAmpliada {
+//         align-items: center;
+//         justify-content: center;
+    
+//         width: 100vh;
+//         height: 100vh;
+
+//         .containerImg {
+//             width: 80vh;
+//             height: 80vh;
+    
+//             .imgO {
+//                 width: 100%;
+//                 height: 100%;
+//                 object-fit: cover;
+//                 border-radius: 1.5rem;
+//             }
+//         }
+//     }
+// }
+
+
+
+
+
+
+@mixin itemCompra {
+    .containerItem {
         width: 100%;
-        height: 600px;
-        margin: 0 120px;
-    
-        .containerImg {
-            width: 500px;
-            height: 500px;
-    
-            .imgO {
+        height: 767px;
+
+        margin-top: 40px;
+
+        justify-content: center;
+        align-items: center;
+
+        .containerCompra {
+            width: 100%;
+            height: 100%;
+
+            .containerFotoO {
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
-                border-radius: 1.5rem;
-            }
-        }
-    }
-
-    .fotoAmpliada {
-        align-items: center;
-        justify-content: center;
-    
-        width: 100vh;
-        height: 100vh;
-
-        .containerImg {
-            width: 80vh;
-            height: 80vh;
-    
-            .imgO {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 1.5rem;
-            }
-        }
-    }
-}
-
-@mixin tituloItemCompra {
-    .tituloO {
-        align-items: center;
-        justify-content: center;
-    
-        width: 100%;
-
-        .tituloContainer {
-            width: 100%;
-            margin: 40px 120px 0 120px;
-    
-            justify-content: space-between;
-            align-items: center;
-    
-            .nyd {
-                flex-direction: column;
-                align-items: flex-start;
-                justify-content: center;
-            }
-    
-            .precio {
                 align-items: center;
-                justify-content: flex-end;
-            }   
-        }  
-    }
-}
+                justify-content: flex-start;
+    
+                .fotoO {
 
-@mixin descItemCompra {
-    .descO {
-        width: 100%;
-        
-        .desContainer {
-            width: 100%;
-            margin: 80px 120px 0 120px;
+                    .containerImg {
+                        width: 767px;
+                        height: 767px;
+                        
+    
+                        .imgO {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
 
-            .dp {
-                width: 100%;
-            }
-
-        }
-    }
-}
-
-@mixin btn {
-    .btoO {
-        width: 100%;
-        justify-content: center;
-
-        margin: 100px 0;
-
-        .btnContainer {
-            width: 750px;
-            justify-content: space-between;
-
-            .btn1 {
-                width: 350px;
-                height: 100px;
-                background-color: white;
-
-                justify-content: center;
-                align-items: center;
-
-                cursor: pointer;
-
-                .tb1 {
-                    color: black;
+                            // border-radius: 2rem;
+                        }
+                    }
                 }
             }
+    
+            .containerContenido {
+                width: 100%;
+                height: 100%;
 
-            .btn2 {
-                width: 350px;
-                height: 100px;
-                background-color: rgb(81, 255, 150);
 
-                justify-content: center;
-                align-items: center;
+                flex-direction: column;
+                justify-content: space-between;
 
-                .tb2 {
-                    color: black;
+                .con1 {
+                    .containerTituInfo {
+                        width: 100%;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: space-between;
+                        
+                        .containerTP {
+                            width: 100%;
+                            align-items: flex-start;
+    
+                            .tituloO {
+                                width: 100%;
+    
+                                .nombreO {
+                                    justify-content: flex-start;
+                                    word-wrap: break-word;
+                                }
+                                
+                                .tm {
+                                    font-size: 7rem;
+                                }
+                            }
+                        }
+    
+                        .containerDim {
+                            width: 100%;
+                        }
+                    }  
+                    
+                    .containerDesc {
+                        width: 100%;
+                        margin-top: 40px;
+                        .descO {
+                            width: 100%;
+                            .desContainer {
+                                width: 100%;                                
+                                .dp {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+    
+                }
+            
+                .con2 {
+                    .containerBtn {
+                        width: 100%;
+                        .btoO {
+                            width: 100%;               
+                            .btnContainer {
+                                width: 100%;
+                                justify-content: space-between;                   
+                                .btn1 {
+                                    width: 400px;
+                                    height: 100px;
+                                    // border-radius: 1rem;
+                                    background-color: white;                   
+                                    justify-content: center;
+                                    align-items: center;                   
+                                    .tb1 {
+                                        color: black;
+                                    }
+                                }
+                                .btn2 {
+                                    width: 400px;
+                                    height: 100px;
+                                    background-color: rgb(81, 255, 150);                  
+                                    justify-content: center;
+                                    align-items: center;                   
+                                    .tb2 {
+                                        color: black;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

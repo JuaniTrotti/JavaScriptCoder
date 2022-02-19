@@ -15,14 +15,14 @@ $( document ).ready(function() {
     console.log( "ready!" );
 
     //main
-    obras.push(new card(1, "obra1jhgd", 230, desc[0], "obra1.jfif", "45cm x 45cm"));
-    obras.push(new card(2, "obra2", 530, desc[1], "obra2.jfif", "45cm x 45cm"));
+    obras.push(new card(1, "obra1", 230, desc[0], "obra1.jfif", "45cm x 45cm"));
+    obras.push(new card(2, "Oil in the water.", 530, desc[1], "obra2.jfif", "45cm x 45cm"));
     obras.push(new card(3, "obra3", 830, desc[2], "obra3.jfif", "45cm x 45cm"));
     obras.push(new card(4, "obra4", 130, desc[3], "obra4.jfif", "45cm x 45cm"));
 
     // cargo las obras en el inicio
     for(let i of obras) {
-        $("#containerO").append(`<a href="./itemCompra.html" id="${i.id}" class="links"><div class="obra cFlex"><img src="./img/jpeg/${i.img}" class="imagenObra"></div></a>`);
+        $("#containerO").append(`<a href="./itemCompra.html" id="${i.id}" class="links noCursor"><div class="obra cFlex"><img src="./img/jpeg/${i.img}" class="imagenObra"></div></a>`);
     };
 
     // guardo en local storage la info de la obra que toque

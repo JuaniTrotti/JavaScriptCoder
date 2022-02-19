@@ -5,6 +5,7 @@
 @import '../pages/itemCompra';
 @import '../pages/cart';
 
+
 /* mediaQuery */
 /* //////////////////////////////////////////////////////////////////////////////// */
 @media screen and (min-width: 1800px) {
@@ -12,19 +13,21 @@
         justify-content: center;
         flex-grow: 1;
 
+        @include pagina;
+
         @include main;
 
         @include card;
 
-        @include pagina;
+        // @include fotoItemCompra;
 
-        @include fotoItemCompra;
+        // @include tituloItemCompra;
 
-        @include tituloItemCompra;
+        // @include descItemCompra;
 
-        @include descItemCompra;
+        // @include btn;
 
-        @include btn;
+        @include itemCompra;
 
         @include carritoEl;
     }
