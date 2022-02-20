@@ -46,7 +46,7 @@
 }
 
 body {
-  background-color: #0a0911;
+  background-color: black;
 }
 
 .cFlex {
@@ -122,7 +122,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-  background-color: #0a0911;
+  background-color: black;
 }
 
 .cFlex {
@@ -195,7 +195,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-  background-color: #0a0911;
+  background-color: black;
 }
 
 .cFlex {
@@ -271,7 +271,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-  background-color: #0a0911;
+  background-color: black;
 }
 
 .cFlex {
@@ -443,6 +443,7 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 2rem;
   }
   .containerBody .containerItem .containerCompra .containerContenido {
     width: 100%;
@@ -673,7 +674,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-  background-color: #0a0911;
+  background-color: black;
 }
 
 .cFlex {
@@ -746,7 +747,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-  background-color: #0a0911;
+  background-color: black;
 }
 
 .cFlex {
@@ -825,7 +826,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-  background-color: #0a0911;
+  background-color: black;
 }
 
 .cFlex {
@@ -937,7 +938,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-  background-color: #0a0911;
+  background-color: black;
 }
 
 .cFlex {

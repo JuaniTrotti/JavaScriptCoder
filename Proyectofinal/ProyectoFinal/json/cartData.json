@@ -1,25 +1,34 @@
 [
     {
         "id": "1",
-        "nombre": "obra1",
-        "precio": "4000",
-        "img": "",
-        "desc": ""
+        "nombre": "sharp yellow sphere",
+        "precio": "1500",
+        "img": "https://images.unsplash.com/photo-1645219502014-88689d94096a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1039&q=80",
+        "desc": "sharp yellow sphere in the dark background (very cool)",
+        "dim": "60cm x 50cm"
     },
     {
         "id": "2",
-        "nombre": "obra2",
-        "precio": "5000"
+        "nombre": "Water layers",
+        "precio": "1500",
+        "img": "https://images.unsplash.com/photo-1645186544410-f195eb13e032?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80",
+        "desc": "...",
+        "dim": "40cm x 60cm"
     },
     {
         "id": "3",
-        "nombre": "obra3",
-        "precio": "7000"
+        "nombre": "Apple?",
+        "precio": "2000",
+        "img": "https://images.unsplash.com/photo-1640282064083-8afa1710efef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
+        "desc": "...",
+        "dim": "40cm x 60cm"
     },
     {
         "id": "4",
-        "nombre": "obra4",
-        "precio": "8000",
-        "img": "https://images.unsplash.com/photo-1645115167984-e683a2ef75b9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
+        "nombre": "Virtual ball",
+        "precio": "1000",
+        "img": "https://images.unsplash.com/photo-1645262748907-6827d43215d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+        "desc": "A simple ball made witdh Blender",
+        "dim": "60cm x 40cm"
     }
 ]

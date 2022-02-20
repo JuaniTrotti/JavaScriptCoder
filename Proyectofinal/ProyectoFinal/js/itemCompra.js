@@ -6,7 +6,7 @@ const carro = [];
 // funciones
 function crearFoto(f) {
     $("#obraP").append(`<div class="containerImg cFlex">
-                            <img src="./img/jpeg/${f.img}" alt="" class="imgO" id="imgO">
+                            <img src="${f.img}" alt="imagen de la obra" class="imgO" id="imgO">
                         </div>`);
 };
 
@@ -23,7 +23,7 @@ function crearTitulo(t) {
 function crearDesc(d) {
     $("#descripcion").append(`<div class="desContainer cFlex">
                         <p class="dp lb textoDimensiones">
-                            ${d.descripcion}
+                            ${d.desc}
                         </p>
                     </div>`);
 };
