@@ -5,7 +5,7 @@
 }
 
 .htmlCursorContainer {
-    --size: 25px;
+    --size: 10px;
     position: fixed;
     width: var(--size);
     height: var(--size);
@@ -13,9 +13,12 @@
     left: calc(var(--size)/-2);
     transform: translate(var(--cursorx, -100px), var(--cursory, -100px)) translateZ(0);
     pointer-events: none;
-    transition: none;
+    // transition: none;
     z-index: 11000;
     will-change: transform;
+
+    transition-duration: 100ms;
+    transition-timing-function: ease-out;
 
     .htmlCursor {
         display: block;
@@ -25,7 +28,56 @@
         border: 1px solid white;
         opacity: 1;
         transform: scale(1) translateZ(0);
+
+        // transition-duration: 200ms;
+        // transition-timing-function: ease-out;
+    }
+
+    .click {
+        animation: click .5s;
+    }
+
+    .click::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 2px solid white;
+        opacity: 1;
+        top: -2px;
+        left: -2px;
+        opacity: 0;
+        transform: scale(1) translateZ(0);
+
+        animation: clickGrande .5s;
+    }
+
+    @keyframes click {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(2);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    @keyframes clickGrande {
+        0% {
+            transform: scale(1);
+            opacity: 0;
+        }
+        50% {
+            transform: scale(1.4);
+            opacity: .8;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 0;
+        }
     }
 }
-
 /* //////////////////////////////////////////////////////////////////////////////// */

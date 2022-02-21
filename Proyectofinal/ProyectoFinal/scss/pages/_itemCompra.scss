@@ -1,54 +1,7 @@
+@import '../base/variables';
+
 /* itemcompra */
 /* //////////////////////////////////////////////////////////////////////////////// */
-
-// @mixin fotoItemCompra {
-//     .fotoO {
-//         align-items: center;
-//         justify-content: center;
-    
-//         width: 100%;
-//         height: 600px;
-//         margin: 0 120px;
-    
-//         .containerImg {
-//             width: 500px;
-//             height: 500px;
-    
-//             .imgO {
-//                 width: 100%;
-//                 height: 100%;
-//                 object-fit: cover;
-//                 border-radius: 1.5rem;
-//             }
-//         }
-//     }
-
-//     .fotoAmpliada {
-//         align-items: center;
-//         justify-content: center;
-    
-//         width: 100vh;
-//         height: 100vh;
-
-//         .containerImg {
-//             width: 80vh;
-//             height: 80vh;
-    
-//             .imgO {
-//                 width: 100%;
-//                 height: 100%;
-//                 object-fit: cover;
-//                 border-radius: 1.5rem;
-//             }
-//         }
-//     }
-// }
-
-
-
-
-
-
 @mixin itemCompra {
     .containerItem {
         width: 100%;
@@ -152,23 +105,86 @@
                                 .btn1 {
                                     width: 400px;
                                     height: 100px;
-                                    // border-radius: 1rem;
-                                    background-color: white;                   
-                                    justify-content: center;
-                                    align-items: center;                   
-                                    .tb1 {
+
+                                    .buton1 {
+                                        position: relative;
+                                        width: 100%;
+                                        height: 100%;
+                                        // border-radius: 1rem;
+                                        background-color: white; 
                                         color: black;
+                                        border: 1px solid white;                  
+                                        justify-content: center;
+                                        align-items: center; 
+                                        transition: all .2s;
+                                       
+                                        .tb1 {
+                                            position: relative;
+                                            z-index: 2;
+                                        }
+
+                                        &:hover {
+                                            color: white;
+                                        }
+
+                                        &:after {
+                                            position: absolute;
+                                            content: "";
+                                            // top: 0;
+                                            right: 0;
+                                            bottom: 0;
+
+                                            width: 100%;
+                                            height: 0;
+                                            background-color: var(--backgroundColor);
+                                            transition: all .2s;
+                                        }
+
+                                        &:hover::after {
+                                            height: 100%;
+                                        } 
                                     }
                                 }
                                 .btn2 {
                                     width: 400px;
                                     height: 100px;
-                                    background-color: rgb(81, 255, 150);                  
-                                    justify-content: center;
-                                    align-items: center;                   
-                                    .tb2 {
-                                        color: black;
+
+                                    .buton2 {
+                                        position: relative;
+                                        width: 100%;
+                                        height: 100%;
+                                        border: 1px solid rgb(81, 255, 150);
+                                        background-color: rgb(81, 255, 150);  
+                                        color: black;                
+                                        justify-content: center;
+                                        align-items: center;                   
+                                        .tb2 {
+                                            position: relative;
+                                            z-index: 2;
+                                        }
+
+                                        &:hover {
+                                            color: rgb(81, 255, 150);
+                                        }
+
+                                        &::after {
+                                            position: absolute;
+                                            content: "";
+                                            // top: 0;
+                                            right: 0;
+                                            bottom: 0;
+
+                                            width: 100%;
+                                            height: 0;
+                                            background-color: var(--backgroundColor);
+                                            transition: all .2s;
+                                        }
+
+                                        &:hover::after {
+                                            height: 100%;
+                                        }
                                     }
+
                                 }
                             }
                         }

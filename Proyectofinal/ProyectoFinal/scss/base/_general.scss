@@ -29,8 +29,7 @@
 }
 
 body {
-    // background-color: rgb(10, 9, 17);
-    background-color: black;
+    background-color: var(--backgroundColor);
 }
 
 
@@ -69,7 +68,7 @@ body {
 .textoDimensiones {
     font-family: var(--font-texto);
     font-size: 2rem;
-    color: rgb(228, 228, 228);
+    // color: rgb(228, 228, 228);
 }
 
 .textoTituloObra {

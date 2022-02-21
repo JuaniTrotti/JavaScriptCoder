@@ -35,6 +35,7 @@
   --cursorx: 0px;
   --cursory: 0px;
   --size: 10px;
+  --backgroundColor: rgb(10, 9, 17);
 }
 
 /* //////////////////////////////////////////////////////////////////////////////// */
@@ -46,7 +47,7 @@
 }
 
 body {
-  background-color: black;
+  background-color: var(--backgroundColor);
 }
 
 .cFlex {
@@ -70,7 +71,6 @@ body {
 .textoDimensiones {
   font-family: var(--font-texto);
   font-size: 2rem;
-  color: #e4e4e4;
 }
 
 .textoTituloObra {
@@ -122,7 +122,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-  background-color: black;
+  background-color: var(--backgroundColor);
 }
 
 .cFlex {
@@ -146,7 +146,6 @@ body {
 .textoDimensiones {
   font-family: var(--font-texto);
   font-size: 2rem;
-  color: #e4e4e4;
 }
 
 .textoTituloObra {
@@ -195,7 +194,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-  background-color: black;
+  background-color: var(--backgroundColor);
 }
 
 .cFlex {
@@ -219,7 +218,6 @@ body {
 .textoDimensiones {
   font-family: var(--font-texto);
   font-size: 2rem;
-  color: #e4e4e4;
 }
 
 .textoTituloObra {
@@ -271,7 +269,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-  background-color: black;
+  background-color: var(--backgroundColor);
 }
 
 .cFlex {
@@ -295,7 +293,6 @@ body {
 .textoDimensiones {
   font-family: var(--font-texto);
   font-size: 2rem;
-  color: #e4e4e4;
 }
 
 .textoTituloObra {
@@ -372,6 +369,16 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   justify-content: space-between;
   gap: 30px;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* Variables */
+/* //////////////////////////////////////////////////////////////////////////////// */
+:root {
+  --cursorx: 0px;
+  --cursory: 0px;
+  --size: 10px;
+  --backgroundColor: rgb(10, 9, 17);
 }
 
 /* //////////////////////////////////////////////////////////////////////////////// */
@@ -500,22 +507,71 @@ body::-webkit-scrollbar-thumb {
   .containerBody .containerItem .containerCompra .containerContenido .con2 .containerBtn .btoO .btnContainer .btn1 {
     width: 400px;
     height: 100px;
+  }
+  .containerBody .containerItem .containerCompra .containerContenido .con2 .containerBtn .btoO .btnContainer .btn1 .buton1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
     background-color: white;
+    color: black;
+    border: 1px solid white;
     justify-content: center;
     align-items: center;
+    transition: all 0.2s;
   }
-  .containerBody .containerItem .containerCompra .containerContenido .con2 .containerBtn .btoO .btnContainer .btn1 .tb1 {
-    color: black;
+  .containerBody .containerItem .containerCompra .containerContenido .con2 .containerBtn .btoO .btnContainer .btn1 .buton1 .tb1 {
+    position: relative;
+    z-index: 2;
+  }
+  .containerBody .containerItem .containerCompra .containerContenido .con2 .containerBtn .btoO .btnContainer .btn1 .buton1:hover {
+    color: white;
+  }
+  .containerBody .containerItem .containerCompra .containerContenido .con2 .containerBtn .btoO .btnContainer .btn1 .buton1:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: var(--backgroundColor);
+    transition: all 0.2s;
+  }
+  .containerBody .containerItem .containerCompra .containerContenido .con2 .containerBtn .btoO .btnContainer .btn1 .buton1:hover::after {
+    height: 100%;
   }
   .containerBody .containerItem .containerCompra .containerContenido .con2 .containerBtn .btoO .btnContainer .btn2 {
     width: 400px;
     height: 100px;
+  }
+  .containerBody .containerItem .containerCompra .containerContenido .con2 .containerBtn .btoO .btnContainer .btn2 .buton2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #51ff96;
     background-color: #51ff96;
+    color: black;
     justify-content: center;
     align-items: center;
   }
-  .containerBody .containerItem .containerCompra .containerContenido .con2 .containerBtn .btoO .btnContainer .btn2 .tb2 {
-    color: black;
+  .containerBody .containerItem .containerCompra .containerContenido .con2 .containerBtn .btoO .btnContainer .btn2 .buton2 .tb2 {
+    position: relative;
+    z-index: 2;
+  }
+  .containerBody .containerItem .containerCompra .containerContenido .con2 .containerBtn .btoO .btnContainer .btn2 .buton2:hover {
+    color: #51ff96;
+  }
+  .containerBody .containerItem .containerCompra .containerContenido .con2 .containerBtn .btoO .btnContainer .btn2 .buton2::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: var(--backgroundColor);
+    transition: all 0.2s;
+  }
+  .containerBody .containerItem .containerCompra .containerContenido .con2 .containerBtn .btoO .btnContainer .btn2 .buton2:hover::after {
+    height: 100%;
   }
   .containerBody .carritoContainer {
     width: 70%;
@@ -674,7 +730,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-  background-color: black;
+  background-color: var(--backgroundColor);
 }
 
 .cFlex {
@@ -698,7 +754,6 @@ body {
 .textoDimensiones {
   font-family: var(--font-texto);
   font-size: 2rem;
-  color: #e4e4e4;
 }
 
 .textoTituloObra {
@@ -747,7 +802,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-  background-color: black;
+  background-color: var(--backgroundColor);
 }
 
 .cFlex {
@@ -771,86 +826,6 @@ body {
 .textoDimensiones {
   font-family: var(--font-texto);
   font-size: 2rem;
-  color: #e4e4e4;
-}
-
-.textoTituloObra {
-  font-family: var(--font-semi-bold);
-  font-size: 8rem;
-}
-
-.textoPrecio {
-  font-family: var(--font-texto);
-  font-size: 4rem;
-}
-
-.linkHome {
-  height: 24px;
-}
-
-body::-webkit-scrollbar {
-  width: 8px;
-  background-color: #252525;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: #686868;
-  border-radius: 1em;
-}
-
-.link {
-  text-decoration: none;
-}
-.link:visited {
-  color: white;
-}
-.link:hover {
-  color: white;
-}
-.link:active {
-  color: white;
-}
-
-/* //////////////////////////////////////////////////////////////////////////////// */
-/* cards */
-/* //////////////////////////////////////////////////////////////////////////////// */
-/* //////////////////////////////////////////////////////////////////////////////// */
-/* animations */
-/* //////////////////////////////////////////////////////////////////////////////// */
-/* //////////////////////////////////////////////////////////////////////////////// */
-/* general */
-/* //////////////////////////////////////////////////////////////////////////////// */
-* {
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  background-color: black;
-}
-
-.cFlex {
-  display: flex;
-}
-
-.containerBody {
-  justify-content: center;
-  flex-grow: 1;
-}
-
-.lb {
-  color: white;
-}
-
-.textoHeader {
-  font-family: var(--font-header);
-  font-size: 1.3rem;
-}
-
-.textoDimensiones {
-  font-family: var(--font-texto);
-  font-size: 2rem;
-  color: #e4e4e4;
 }
 
 .textoTituloObra {
@@ -930,88 +905,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* //////////////////////////////////////////////////////////////////////////////// */
-/* general */
-/* //////////////////////////////////////////////////////////////////////////////// */
-* {
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  background-color: black;
-}
-
-.cFlex {
-  display: flex;
-}
-
-.containerBody {
-  justify-content: center;
-  flex-grow: 1;
-}
-
-.lb {
-  color: white;
-}
-
-.textoHeader {
-  font-family: var(--font-header);
-  font-size: 1.3rem;
-}
-
-.textoDimensiones {
-  font-family: var(--font-texto);
-  font-size: 2rem;
-  color: #e4e4e4;
-}
-
-.textoTituloObra {
-  font-family: var(--font-semi-bold);
-  font-size: 8rem;
-}
-
-.textoPrecio {
-  font-family: var(--font-texto);
-  font-size: 4rem;
-}
-
-.linkHome {
-  height: 24px;
-}
-
-body::-webkit-scrollbar {
-  width: 8px;
-  background-color: #252525;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: #686868;
-  border-radius: 1em;
-}
-
-.link {
-  text-decoration: none;
-}
-.link:visited {
-  color: white;
-}
-.link:hover {
-  color: white;
-}
-.link:active {
-  color: white;
-}
-
-/* //////////////////////////////////////////////////////////////////////////////// */
-/* main */
-/* //////////////////////////////////////////////////////////////////////////////// */
-/* //////////////////////////////////////////////////////////////////////////////// */
-/* itemcompra */
-/* //////////////////////////////////////////////////////////////////////////////// */
-/* //////////////////////////////////////////////////////////////////////////////// */
-/* cart */
-/* //////////////////////////////////////////////////////////////////////////////// */
-/* //////////////////////////////////////////////////////////////////////////////// */
 /* cursor */
 /* //////////////////////////////////////////////////////////////////////////////// */
 .noCursor {
@@ -1019,7 +912,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .htmlCursorContainer {
-  --size: 25px;
+  --size: 10px;
   position: fixed;
   width: var(--size);
   height: var(--size);
@@ -1027,9 +920,10 @@ body::-webkit-scrollbar-thumb {
   left: calc(var(--size) / -2);
   transform: translate(var(--cursorx, -100px), var(--cursory, -100px)) translateZ(0);
   pointer-events: none;
-  transition: none;
   z-index: 11000;
   will-change: transform;
+  transition-duration: 100ms;
+  transition-timing-function: ease-out;
 }
 .htmlCursorContainer .htmlCursor {
   display: block;
@@ -1039,6 +933,48 @@ body::-webkit-scrollbar-thumb {
   border: 1px solid white;
   opacity: 1;
   transform: scale(1) translateZ(0);
+}
+.htmlCursorContainer .click {
+  animation: click 0.5s;
+}
+.htmlCursorContainer .click::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid white;
+  opacity: 1;
+  top: -2px;
+  left: -2px;
+  opacity: 0;
+  transform: scale(1) translateZ(0);
+  animation: clickGrande 0.5s;
+}
+@keyframes click {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes clickGrande {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
 }
 
 /* //////////////////////////////////////////////////////////////////////////////// */
