@@ -352,7 +352,7 @@ body::-webkit-scrollbar-thumb {
   width: 50%;
   gap: 40px;
   position: fixed;
-  z-index: 4;
+  z-index: 10;
   top: 28px;
 }
 .containerHeader .header .logoHome {
@@ -635,7 +635,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .menuHam {
-    z-index: 2;
+    z-index: 4;
     position: fixed;
     top: 0;
     left: 0;
@@ -676,6 +676,7 @@ body::-webkit-scrollbar-thumb {
     top: 0;
     height: 100vh;
     width: 100vw;
+    z-index: 3;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
   }
@@ -686,7 +687,7 @@ body::-webkit-scrollbar-thumb {
 
   .fade-in {
     display: block;
-    animation: fadeIn ease 0.5s;
+    animation: fadeIn ease 0.5s forwards;
   }
 
   @keyframes fadeIn {
@@ -885,7 +886,7 @@ body::-webkit-scrollbar-thumb {
   width: 50%;
   gap: 40px;
   position: fixed;
-  z-index: 4;
+  z-index: 10;
   top: 28px;
 }
 .containerHeader .header .logoHome {
@@ -949,7 +950,10 @@ body::-webkit-scrollbar-thumb {
   left: -2px;
   opacity: 0;
   transform: scale(1) translateZ(0);
-  animation: clickGrande 0.5s;
+  animation: clickGrande 0.4s;
+}
+.htmlCursorContainer .noShow {
+  animation: noShow 0.5s forwards;
 }
 @keyframes click {
   0% {
@@ -974,6 +978,15 @@ body::-webkit-scrollbar-thumb {
   100% {
     transform: scale(1);
     opacity: 0;
+  }
+}
+@keyframes noShow {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
   }
 }
 

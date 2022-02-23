@@ -4,6 +4,7 @@ const menuHam = document.querySelector(".menuHam");
 const fondoM = document.querySelector(".fondoMenu");
 var cont = 1
 
+// boton animado
 const botonHam = lottie.loadAnimation({
     container: iconHam, // the dom element that will contain the animation
     renderer: 'svg',
@@ -50,4 +51,17 @@ $( document ).ready(function() {
         }
         cont += 1;
     }
+
+    fondoM.onclick = function() {
+        menuHam.classList.remove("hide");
+        fondoM.classList.add("fade-in"); 
+        disableScroll();
+        botonHam.setSpeed(1);
+        botonHam.setDirection(1);
+        botonHam.play();
+        console.log("hice click en el fondo")
+        cont += 1;
+    }
+
+
 });
