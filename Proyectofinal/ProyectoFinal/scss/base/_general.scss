@@ -12,11 +12,10 @@
     }
 }
 
-@mixin pagina1200 {
+@mixin paginaMenor {
     .pagina {
         width: 100%;
         margin: 0 5%;
-        border: 1px solid white;
     
         flex-direction: column;
         align-items: center;
@@ -184,7 +183,6 @@ body::-webkit-scrollbar-thumb {
 
     .hideFondo {
         display: none;
-        // opacity: 0;
     }
     
     .fade-in {
@@ -198,6 +196,58 @@ body::-webkit-scrollbar-thumb {
         }
         100% {
           opacity:1;
+        }
+    }
+}
+
+@mixin menuHam900 {
+    .hide {
+        margin-left: -40vw;
+    }
+
+    .menuHam {
+        width: 40vw;
+    }
+}
+
+@mixin menuHam600 {
+    .hide {
+        margin-left: -40vw;
+    }
+
+    .menuHam {
+        width: 40vw;
+    }
+}
+
+@mixin menuHam300 {
+    .hide {
+        margin-left: -50vw;
+    }
+
+    .menuHam {
+        width: 50vw;
+
+        .containerHam {
+            margin: 40% 20%;
+
+            .infoHam {
+
+                .titulo {
+                    
+                    .textoTituloHam {
+                        font-family: var(--font-semi-bold);
+                        font-size: 3rem;
+                    }
+                }
+
+                .opHam {
+                    
+                    .textoPrecio {
+                        font-size: 2em;
+                    }
+                }
+            }
         }
     }
 }

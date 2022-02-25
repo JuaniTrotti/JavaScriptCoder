@@ -19,14 +19,6 @@
 
         @include card;
 
-        // @include fotoItemCompra;
-
-        // @include tituloItemCompra;
-
-        // @include descItemCompra;
-
-        // @include btn;
-
         @include itemCompra;
 
         @include carritoEl;
@@ -39,11 +31,59 @@
     .containerBody {
         justify-content: center;
 
-        @include main1200;
+        @include paginaMenor;
 
-        @include pagina1200;
+        @include main1200;
 
         @include card1200;  
     }
+
+    @include menuHam;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+    .containerBody {
+        justify-content: center;
+
+        @include paginaMenor;
+
+        @include main900;
+
+        @include card900;
+    }
+
+    @include menuHam;
+    @include menuHam900;
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    .containerBody {
+        justify-content: center;
+
+        @include paginaMenor;
+
+        @include main600;
+
+        @include card600;
+    }
+
+    @include menuHam;
+    @include menuHam600;
+}
+
+@media screen and (max-width: 600px) and (min-width: 300px) {
+    .containerBody {
+        justify-content: center;
+
+        @include paginaMenor;
+
+        @include main300;
+
+        @include card300;
+    }
+
+    @include header300;
+    @include menuHam;
+    @include menuHam300;
 }
 /* //////////////////////////////////////////////////////////////////////////////// */

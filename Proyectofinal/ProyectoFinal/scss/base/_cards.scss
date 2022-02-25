@@ -4,16 +4,11 @@
 /* //////////////////////////////////////////////////////////////////////////////// */
 @mixin card {
     .containerObras {
-        // margin-top: 165px;
         width: 1600px;
         justify-content: space-between;
         gap: 40px;
         flex-wrap: wrap;
         flex-grow: 1;
-    
-        // border: 1px solid red;
-
-        // @include layer2;
     
         .obra {
             width: 780px;
@@ -31,9 +26,85 @@
 
 @mixin card1200 {
     .containerObras {
-        display: none;
-        
+        width: 95%;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        gap: 40px;
+
+        .obra {
+            width: 490px;
+            height: 490px;
+    
+            .imagenObra {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
     }
 }
 
+@mixin card900 {
+    .containerObras {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        gap: 30px;
+
+        .obra {
+            width: 390px;
+            height: 390px;
+    
+            .imagenObra {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }        
+    }
+}
+
+@mixin card600 {
+    .containerObras {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        gap: 30px;
+
+        .obra {
+            width: 390px;
+            height: 390px;
+    
+            .imagenObra {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }        
+    }
+}
+
+@mixin card300 {
+    .containerObras {
+        width: 80%;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        gap: 30px;
+
+        .obra {
+            width: 250px;
+            height: 250px;
+    
+            .imagenObra {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }        
+    }
+}
 /* //////////////////////////////////////////////////////////////////////////////// */

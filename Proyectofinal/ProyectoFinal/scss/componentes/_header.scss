@@ -8,8 +8,6 @@
 
     align-items: center;
 
-    // @include layer3;
-
     .header {
         align-items: center;
         width: 100%;
@@ -29,11 +27,6 @@
             top: 28px;
         }
 
-        .logoHome {
-            align-items: center;
-            justify-content: center;
-        }
-
         .menuOp {
             align-items: center;
             justify-content: flex-end;
@@ -45,6 +38,30 @@
                 align-items: center;
                 justify-content: space-between;
                 gap: 30px;
+            }
+        }
+    }
+}
+
+@mixin header300 {
+    .containerHeader {
+        width: 100%;
+
+        .header {
+            width: 100%;
+
+            .botonHam {
+                position: fixed;
+                left: 30px;
+
+                .menuHamBtn {
+                    transform: scale(.8);
+                }
+            }
+    
+            .menuOp {
+                position: fixed;
+                right: 30px;
             }
         }
     }

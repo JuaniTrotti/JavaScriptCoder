@@ -35,7 +35,7 @@ function crearBot() {
                                 <h2 class="textoDimensiones tb1">add to cart</h2>
                             </div>
                         </div>
-                        <a href="./cart.html" class="link noCursor">
+                        <a href="./cart.html" class="link">
                             <div class="btn2 cFlex">
                                 <div class="buton2 cFlex">
                                     <h2 class="textoDimensiones tb2">buy</h2>

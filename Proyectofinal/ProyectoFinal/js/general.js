@@ -2,6 +2,10 @@
 const iconHam = document.querySelector(".menuHamBtn");
 const menuHam = document.querySelector(".menuHam");
 const fondoM = document.querySelector(".fondoMenu");
+
+const pointer = document.querySelector(".htmlCursor");
+const menuHover = document.querySelector(".menuHam");
+
 var cont = 1
 
 // boton animado
@@ -50,18 +54,17 @@ $( document ).ready(function() {
             botonHam.play();
         }
         cont += 1;
-    }
+    };
 
-    fondoM.onclick = function() {
-        menuHam.classList.remove("hide");
-        fondoM.classList.add("fade-in"); 
-        disableScroll();
-        botonHam.setSpeed(1);
-        botonHam.setDirection(1);
-        botonHam.play();
-        console.log("hice click en el fondo")
-        cont += 1;
-    }
-
-
+    if (cont%2 != 0) {
+        fondoM.addEventListener("click", function() {
+            menuHam.classList.add("hide");
+            fondoM.classList.remove("fade-in");
+            enableScroll();
+            botonHam.setSpeed(2);
+            botonHam.setDirection(-1);
+            botonHam.play();
+            console.log("hice click")
+        });
+    };
 });

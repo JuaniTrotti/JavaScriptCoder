@@ -1,6 +1,7 @@
 // variables 
 const cursorEventos = document.querySelector(".jsCursor");
 const pointer = document.querySelector(".htmlCursor");
+const menuHover = document.querySelector(".menuHam");
 
 // funciones
 function isTouchDevice() {
@@ -50,8 +51,6 @@ if (!isTouch) {
     
     const hoverFalse = () => {
     }
-
-
     // main
     eventos();
 };
