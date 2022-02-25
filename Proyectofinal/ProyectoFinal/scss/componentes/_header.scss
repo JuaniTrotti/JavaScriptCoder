@@ -46,27 +46,25 @@
 @mixin header300 {
     .containerHeader {
         width: 100%;
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
         position: fixed;
-        z-index: 2;
+        z-index: 5;
 
         .header {
             width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 20px;
 
             .botonHam {
-                left: 30px;
-                top: 28px;
-
                 .menuHamBtn {
                     transform: scale(.8);
                 }
             }
     
             .menuOp {
-                right: 30px;
-                top: 28px;
-                
+                .menuOpTodo {
+                    align-items: center;
+                }
             }
         }
     }
