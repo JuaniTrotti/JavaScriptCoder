@@ -1068,20 +1068,24 @@ body::-webkit-scrollbar-thumb {
 
   .containerHeader {
     width: 100%;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    position: fixed;
+    z-index: 2;
   }
   .containerHeader .header {
     width: 100%;
   }
   .containerHeader .header .botonHam {
-    position: fixed;
     left: 30px;
+    top: 28px;
   }
   .containerHeader .header .botonHam .menuHamBtn {
     transform: scale(0.8);
   }
   .containerHeader .header .menuOp {
-    position: fixed;
     right: 30px;
+    top: 28px;
   }
 
   .hide {
