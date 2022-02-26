@@ -56,12 +56,15 @@
             margin: 0 20px;
 
             .botonHam {
+                position: inherit;
+                
                 .menuHamBtn {
                     transform: scale(.8);
                 }
             }
     
             .menuOp {
+                width: 50%;
                 .menuOpTodo {
                     align-items: center;
                 }

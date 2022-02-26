@@ -1184,8 +1184,14 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     margin: 0 20px;
   }
+  .containerHeader .header .botonHam {
+    position: inherit;
+  }
   .containerHeader .header .botonHam .menuHamBtn {
     transform: scale(0.8);
+  }
+  .containerHeader .header .menuOp {
+    width: 50%;
   }
   .containerHeader .header .menuOp .menuOpTodo {
     align-items: center;
