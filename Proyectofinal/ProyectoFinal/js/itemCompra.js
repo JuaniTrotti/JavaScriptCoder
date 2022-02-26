@@ -30,12 +30,12 @@ function crearDesc(d) {
 
 function crearBot() {
     $("#botonesCompra").append(`<div class="btnContainer cFlex">
-                        <div class="btn1 cFlex">
+                        <div class="btn1 cursorHover cFlex">
                             <div class="buton1 cFlex">
                                 <h2 class="textoDimensiones tb1 tb">add to cart</h2>
                             </div>
                         </div>
-                        <a href="./cart.html" class="link">
+                        <a href="./cart.html" class="link cursorHover">
                             <div class="btn2 cFlex">
                                 <div class="buton2 cFlex">
                                     <h2 class="textoDimensiones tb2 tb">buy</h2>

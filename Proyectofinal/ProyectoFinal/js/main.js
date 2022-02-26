@@ -12,7 +12,7 @@ function cargarObras() {
         success: function(respuesta) {
             for (let i of respuesta) {
                 obras.push(new card(i.id, i.nombre, i.precio, i.desc, i.img, i.dim))
-                $("#containerO").append(`<a href="./itemCompra.html" id="${i.id}" class="link">
+                $("#containerO").append(`<a href="./itemCompra.html" id="${i.id}" class="link cursorHover">
                                             <div class="obra cFlex">
                                                 <img src="${i.img}" class="imagenObra">
                                             </div>
