@@ -1997,7 +1997,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 2.5em;
   }
 }
-@media screen and (max-width: 600px) and (min-width: 300px) {
+@media screen and (max-width: 600px) and (min-width: 200px) {
   .containerBody {
     justify-content: center;
     align-items: center;
@@ -2187,16 +2187,28 @@ body::-webkit-scrollbar-thumb {
   .containerBody .containerItem .containerCompra .containerContenido .con2 .containerBtn .btoO .btnContainer .btn2 .buton2:hover::after {
     height: 100%;
   }
-  .containerBody .containerItem .containerCompra {
-    flex-direction: column;
+  .containerBody .containerItem {
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    justify-content: center;
     align-items: center;
   }
+  .containerBody .containerItem .containerCompra {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
   .containerBody .containerItem .containerCompra .containerFotoO {
+    width: 100%;
+    height: 100%;
+    align-items: center;
     justify-content: center;
   }
   .containerBody .containerItem .containerCompra .containerFotoO .fotoO .containerImg {
-    width: 40vh;
-    height: 40vh;
+    width: 26vh;
+    height: 26vh;
   }
   .containerBody .containerItem .containerCompra .containerFotoO .fotoO .containerImg .imgO {
     width: 100%;
@@ -2235,14 +2247,14 @@ body::-webkit-scrollbar-thumb {
     word-wrap: break-word;
   }
   .containerBody .containerItem .containerCompra .containerContenido .con1 .containerTituInfo .containerTP .tituloO .tm {
-    font-size: 3.5rem;
+    font-size: 2.2rem;
   }
   .containerBody .containerItem .containerCompra .containerContenido .con1 .containerTituInfo .containerDim {
     margin-top: 10px;
     width: 100%;
   }
   .containerBody .containerItem .containerCompra .containerContenido .con1 .containerTituInfo .containerDim .td {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
   .containerBody .containerItem .containerCompra .containerContenido .con1 .containerDesc {
     width: 100%;
@@ -2258,7 +2270,7 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
   }
   .containerBody .containerItem .containerCompra .containerContenido .con1 .containerDesc .descO .desContainer .tdd {
-    font-size: 1.7rem;
+    font-size: 1.1rem;
   }
   .containerBody .containerItem .containerCompra .containerContenido .con2 {
     padding: 40px;
@@ -2280,7 +2292,7 @@ body::-webkit-scrollbar-thumb {
   }
   .containerBody .containerItem .containerCompra .containerContenido .con2 .containerBtn .btoO .btnContainer .btn1 {
     width: 48%;
-    height: 80px;
+    height: 50px;
   }
   .containerBody .containerItem .containerCompra .containerContenido .con2 .containerBtn .btoO .btnContainer .btn1 .buton1 {
     position: relative;
@@ -2292,6 +2304,9 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
     transition: all 0.2s;
+  }
+  .containerBody .containerItem .containerCompra .containerContenido .con2 .containerBtn .btoO .btnContainer .btn1 .buton1 .tb {
+    font-size: 1.2rem;
   }
   .containerBody .containerItem .containerCompra .containerContenido .con2 .containerBtn .btoO .btnContainer .btn1 .buton1 .tb1 {
     position: relative;
@@ -2318,7 +2333,7 @@ body::-webkit-scrollbar-thumb {
   }
   .containerBody .containerItem .containerCompra .containerContenido .con2 .containerBtn .btoO .btnContainer a .btn2 {
     width: 100%;
-    height: 80px;
+    height: 50px;
   }
   .containerBody .containerItem .containerCompra .containerContenido .con2 .containerBtn .btoO .btnContainer a .btn2 .buton2 {
     position: relative;
@@ -2329,6 +2344,9 @@ body::-webkit-scrollbar-thumb {
     color: black;
     justify-content: center;
     align-items: center;
+  }
+  .containerBody .containerItem .containerCompra .containerContenido .con2 .containerBtn .btoO .btnContainer a .btn2 .buton2 .tb {
+    font-size: 1.2rem;
   }
   .containerBody .containerItem .containerCompra .containerContenido .con2 .containerBtn .btoO .btnContainer a .btn2 .buton2 .tb2 {
     position: relative;

@@ -694,15 +694,27 @@
 
 @mixin itemCompra300 {
     .containerItem {
+        width: 100%;
+        height: auto;
+        margin-top: 80px;
+        margin-bottom: 40px;
+
+        justify-content: center;
+        align-items: center;
         .containerCompra {
+            width: 100%;
+            height: 100%;
             flex-direction: column;
-            align-items: center;
+
             .containerFotoO {
+                width: 100%;
+                height: 100%;
+                align-items: center;
                 justify-content: center;
                 .fotoO {
                     .containerImg {
-                        width: 40vh;
-                        height: 40vh;
+                        width: 26vh;
+                        height: 26vh;
                         
     
                         .imgO {
@@ -749,7 +761,7 @@
                                 }
                                 
                                 .tm {
-                                    font-size: 3.5rem;
+                                    font-size: 2.2rem;
                                 }
                             }
                         }
@@ -759,7 +771,7 @@
                             width: 100%;
 
                             .td {
-                                font-size: 1.8rem;
+                                font-size: 1.2rem;
                             }
                         }
                     }  
@@ -775,7 +787,7 @@
                                     width: 100%;
                                 }
                                 .tdd {
-                                    font-size: 1.7rem;
+                                    font-size: 1.1rem;
                                 }
                             }
                         }
@@ -799,7 +811,7 @@
                                                
                                 .btn1 {
                                     width: 48%;
-                                    height: 80px;
+                                    height: 50px;
 
                                     .buton1 {
                                         position: relative;
@@ -812,7 +824,9 @@
                                         justify-content: center;
                                         align-items: center; 
                                         transition: all .2s;
-                                       
+                                        .tb {
+                                            font-size: 1.2rem;
+                                        }    
                                         .tb1 {
                                             position: relative;
                                             z-index: 2;
@@ -845,7 +859,7 @@
 
                                     .btn2 {
                                         width: 100%;
-                                        height: 80px;
+                                        height: 50px;
     
     
                                         .buton2 {
@@ -856,7 +870,10 @@
                                             background-color: rgb(81, 255, 150);  
                                             color: black;                
                                             justify-content: center;
-                                            align-items: center;                   
+                                            align-items: center;  
+                                            .tb {
+                                                font-size: 1.2rem;
+                                            }                 
                                             .tb2 {
                                                 position: relative;
                                                 z-index: 2;
