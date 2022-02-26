@@ -2632,7 +2632,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .htmlCursorContainer {
-  --size: 10px;
+  --size: 15px;
   position: fixed;
   width: var(--size);
   height: var(--size);
@@ -2717,7 +2717,7 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border: 2px solid #36ffde;
+  border: 2px solid #00ffaa;
   opacity: 1;
   top: -2px;
   left: -2px;
