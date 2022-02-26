@@ -14,6 +14,8 @@ const isTouch = isTouchDevice();
 
 // main 
 if (!isTouch) {
+    
+
 
     // funciones 
     const eventos = () => {
@@ -53,6 +55,8 @@ if (!isTouch) {
     }
     // main
     eventos();
+} else {
+    cursorEventos.style.display = "none"
 };
 
 

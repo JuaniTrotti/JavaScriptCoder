@@ -39,6 +39,7 @@
     }
 
     @include menuHam;
+    @include menuHam1200;
 }
 
 @media screen and (max-width: 1200px) and (min-width: 900px) {
@@ -59,6 +60,7 @@
 @media screen and (max-width: 900px) and (min-width: 600px) {
     .containerBody {
         justify-content: center;
+
 
         @include paginaMenor;
 

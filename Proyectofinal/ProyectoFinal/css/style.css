@@ -745,7 +745,7 @@ body::-webkit-scrollbar-thumb {
     height: 100vh;
     width: 30vw;
     transition: all 0.2s ease-in;
-    background-color: #e2e2e2;
+    background-color: white;
   }
   .menuHam .containerHam {
     width: 100%;
@@ -848,7 +848,7 @@ body::-webkit-scrollbar-thumb {
     height: 100vh;
     width: 30vw;
     transition: all 0.2s ease-in;
-    background-color: #e2e2e2;
+    background-color: white;
   }
   .menuHam .containerHam {
     width: 100%;
@@ -903,6 +903,13 @@ body::-webkit-scrollbar-thumb {
     100% {
       opacity: 1;
     }
+  }
+  .hide {
+    margin-left: -50vw;
+  }
+
+  .menuHam {
+    width: 50vw;
   }
 }
 @media screen and (max-width: 1200px) and (min-width: 900px) {
@@ -954,7 +961,7 @@ body::-webkit-scrollbar-thumb {
     height: 100vh;
     width: 30vw;
     transition: all 0.2s ease-in;
-    background-color: #e2e2e2;
+    background-color: white;
   }
   .menuHam .containerHam {
     width: 100%;
@@ -1016,6 +1023,13 @@ body::-webkit-scrollbar-thumb {
 
   .menuHam {
     width: 40vw;
+  }
+  .menuHam .containerHam .infoHam .titulo .textoTituloHam {
+    font-family: var(--font-semi-bold);
+    font-size: 4rem;
+  }
+  .menuHam .containerHam .infoHam .opHam .textoPrecio {
+    font-size: 3em;
   }
 }
 @media screen and (max-width: 900px) and (min-width: 600px) {
@@ -1067,7 +1081,7 @@ body::-webkit-scrollbar-thumb {
     height: 100vh;
     width: 30vw;
     transition: all 0.2s ease-in;
-    background-color: #e2e2e2;
+    background-color: white;
   }
   .menuHam .containerHam {
     width: 100%;
@@ -1124,11 +1138,18 @@ body::-webkit-scrollbar-thumb {
     }
   }
   .hide {
-    margin-left: -40vw;
+    margin-left: -60vw;
   }
 
   .menuHam {
-    width: 40vw;
+    width: 60vw;
+  }
+  .menuHam .containerHam .infoHam .titulo .textoTituloHam {
+    font-family: var(--font-semi-bold);
+    font-size: 3.5rem;
+  }
+  .menuHam .containerHam .infoHam .opHam .textoPrecio {
+    font-size: 2.5em;
   }
 }
 @media screen and (max-width: 600px) and (min-width: 300px) {
@@ -1209,7 +1230,7 @@ body::-webkit-scrollbar-thumb {
     height: 100vh;
     width: 30vw;
     transition: all 0.2s ease-in;
-    background-color: #e2e2e2;
+    background-color: white;
   }
   .menuHam .containerHam {
     width: 100%;
@@ -1266,14 +1287,14 @@ body::-webkit-scrollbar-thumb {
     }
   }
   .hide {
-    margin-left: -50vw;
+    margin-left: -100vw;
   }
 
   .menuHam {
-    width: 50vw;
+    width: 100vw;
   }
   .menuHam .containerHam {
-    margin: 40% 20%;
+    margin: 40% 20px;
   }
   .menuHam .containerHam .infoHam .titulo .textoTituloHam {
     font-family: var(--font-semi-bold);

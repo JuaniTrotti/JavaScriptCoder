@@ -127,7 +127,8 @@ body::-webkit-scrollbar-thumb {
 
         transition: all 0.2s ease-in;
 
-        background-color: rgb(226, 226, 226);
+        // background-color: rgb(226, 226, 226);
+        background-color: white;
 
 
         .containerHam {
@@ -200,6 +201,16 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
+@mixin menuHam1200 {
+    .hide {
+        margin-left: -50vw;
+    }
+
+    .menuHam {
+        width: 50vw;
+    }
+}
+
 @mixin menuHam900 {
     .hide {
         margin-left: -40vw;
@@ -207,29 +218,71 @@ body::-webkit-scrollbar-thumb {
 
     .menuHam {
         width: 40vw;
+
+        .containerHam {
+
+            .infoHam {
+
+                .titulo {
+                    
+                    .textoTituloHam {
+                        font-family: var(--font-semi-bold);
+                        font-size: 4rem;
+                    }
+                }
+
+                .opHam {
+                    
+                    .textoPrecio {
+                        font-size: 3em;
+                    }
+                }
+            }
+        }
     }
 }
 
 @mixin menuHam600 {
     .hide {
-        margin-left: -40vw;
+        margin-left: -60vw;
     }
 
     .menuHam {
-        width: 40vw;
+        width: 60vw;
+
+        .containerHam {
+
+            .infoHam {
+
+                .titulo {
+                    
+                    .textoTituloHam {
+                        font-family: var(--font-semi-bold);
+                        font-size: 3.5rem;
+                    }
+                }
+
+                .opHam {
+                    
+                    .textoPrecio {
+                        font-size: 2.5em;
+                    }
+                }
+            }
+        }
     }
 }
 
 @mixin menuHam300 {
     .hide {
-        margin-left: -50vw;
+        margin-left: -100vw;
     }
 
     .menuHam {
-        width: 50vw;
+        width: 100vw;
 
         .containerHam {
-            margin: 40% 20%;
+            margin: 40% 20px;
 
             .infoHam {
 
