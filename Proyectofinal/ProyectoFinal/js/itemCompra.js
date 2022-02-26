@@ -16,13 +16,13 @@ function crearTitulo(t) {
                         </div>`)
 
     $("#dim").append(`<div class="dimensionO lb cFlex">
-                            <h2 class="textoDimensiones">${t.dim} - $${t.precio}</h2>                       
+                            <h2 class="textoDimensiones td">${t.dim} - $${t.precio}</h2>                       
                         </div>`)
 };
 
 function crearDesc(d) {
     $("#descripcion").append(`<div class="desContainer cFlex">
-                        <p class="dp lb textoDimensiones">
+                        <p class="dp lb textoDimensiones tdd">
                             ${d.desc}
                         </p>
                     </div>`);

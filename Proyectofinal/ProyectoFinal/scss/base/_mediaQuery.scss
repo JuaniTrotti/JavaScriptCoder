@@ -12,6 +12,8 @@
     .containerBody {
         justify-content: center;
         flex-grow: 1;
+        align-items: center;
+        min-height: 92vh;
 
         @include pagina;
 
@@ -30,12 +32,17 @@
 @media screen and (max-width: 1800px) and (min-width: 1200px) {
     .containerBody {
         justify-content: center;
+        align-items: center;
+        min-height: 92vh;
 
         @include paginaMenor;
 
         @include main1200;
 
-        @include card1200;  
+        @include card1200;
+        
+        @include itemCompra;
+        @include itemCompra1200;
     }
 
     @include menuHam;
@@ -45,12 +52,17 @@
 @media screen and (max-width: 1200px) and (min-width: 900px) {
     .containerBody {
         justify-content: center;
+        align-items: center;
+        min-height: 92vh;
 
         @include paginaMenor;
 
         @include main900;
 
         @include card900;
+
+        @include itemCompra;
+        @include itemCompra900;
     }
 
     @include menuHam;
@@ -60,6 +72,8 @@
 @media screen and (max-width: 900px) and (min-width: 600px) {
     .containerBody {
         justify-content: center;
+        align-items: center;
+        min-height: 92vh;
 
 
         @include paginaMenor;
@@ -67,6 +81,9 @@
         @include main600;
 
         @include card600;
+
+        @include itemCompra;
+        @include itemCompra600;
     }
 
     @include menuHam;
@@ -76,12 +93,17 @@
 @media screen and (max-width: 600px) and (min-width: 300px) {
     .containerBody {
         justify-content: center;
+        align-items: center;
+        min-height: 92vh;
 
         @include paginaMenor;
 
         @include main300;
 
         @include card300;
+
+        @include itemCompra;
+        @include itemCompra300;
     }
 
     @include header300;

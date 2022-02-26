@@ -7,8 +7,6 @@
         width: 100%;
         height: 767px;
 
-        margin-top: 40px;
-
         justify-content: center;
         align-items: center;
 
@@ -194,4 +192,706 @@
         }
     }
 }
+
+@mixin itemCompra1200 {
+    .containerItem {
+        height: 100%;
+        .containerCompra {
+            .containerFotoO {
+                width: 55%;
+                .fotoO {
+                    height: 100%;
+                    .containerImg {
+                        width: 55vh;
+                        height: 55vh;
+                    }
+                }
+            }
+            .containerContenido {
+                width: 45%;
+                height: initial;
+                .con1 {
+                    .containerTituInfo {                        
+                        .containerTP {
+                            .tituloO {
+                                width: 100%;                              
+                                .tm {
+                                    font-size: 4.8rem;
+                                }
+                            }
+                        }
+                    }    
+                }
+            
+                .con2 {
+                    height: 15%;
+                    .containerBtn {
+                        width: 100%;
+                        height: 100%;
+                        .btoO {
+                            width: 100%;   
+                            height: 100%;            
+                            .btnContainer {
+                                width: 100%;
+                                height: 100%;   
+                                justify-content: space-between;                   
+                                .btn1 {
+                                    width: calc(48% - 1px);
+                                    height: calc(100% - 1px);
+                                }
+                                a {
+                                    width: calc(48% - 1px);
+                                    .btn2 {
+                                        width: 100%;
+                                        height: calc(100% - 1px);
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin itemCompra900 {
+    .containerItem {
+        width: 100%;
+        height: auto;
+        margin-bottom: 40px;
+
+        justify-content: center;
+        align-items: center;
+
+        .containerCompra {
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+
+            .containerFotoO {
+                width: 100%;
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+    
+                .fotoO {
+
+                    .containerImg {
+                        width: 45vh;
+                        height: 45vh;
+                        
+    
+                        .imgO {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+
+                            border-radius: 2rem;
+                        }
+                    }
+                }
+            }
+    
+            .containerContenido {
+                width: 100%;
+                height: 100%;
+                margin-top: 80px;
+
+                background-color: rgb(14, 12, 27);
+                border-radius: 2rem;
+           
+                flex-direction: row;
+                justify-content: space-between;
+
+                .con1 {
+                    width: 70%;
+                    padding: 40px;
+                    .containerTituInfo {
+                        width: 100%;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: space-between;
+                        
+                        .containerTP {
+                            width: 100%;
+                            align-items: flex-start;
+    
+                            .tituloO {
+                                width: 100%;
+    
+                                .nombreO {
+                                    justify-content: flex-start;
+                                    word-wrap: break-word;
+                                }
+                                
+                                .tm {
+                                    font-size: 4rem;
+                                }
+                            }
+                        }
+    
+                        .containerDim {
+                            margin-top: 10px;
+                            width: 100%;
+
+                            .td {
+                                font-size: 2rem;
+                            }
+                        }
+                    }  
+                    
+                    .containerDesc {
+                        width: 100%;
+                        margin-top: 40px;
+                        .descO {
+                            width: 100%;
+                            .desContainer {
+                                width: 100%;                                
+                                .dp {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+    
+                }
+            
+                .con2 {
+                    width: 30%;
+                    height: initial;
+                    padding: 40px;
+                    .containerBtn {
+                        width: 100%;
+                        height: 100%;
+                        .btoO {
+                            width: 100%;
+                            height: 100%;               
+                            .btnContainer {
+                                width: 100%;
+                                height: 100%;
+                                flex-direction: column;
+                                justify-content: flex-start;
+                                gap: 15px;
+                                               
+                                .btn1 {
+                                    width: calc(100% - 1px);
+                                    height: 80px;
+
+                                    .buton1 {
+                                        position: relative;
+                                        width: 100%;
+                                        height: 100%;
+                                        // border-radius: 1rem;
+                                        background-color: white; 
+                                        color: black;
+                                        border: 1px solid white;                  
+                                        justify-content: center;
+                                        align-items: center; 
+                                        transition: all .2s;
+                                       
+                                        .tb1 {
+                                            position: relative;
+                                            z-index: 2;
+                                        }
+
+                                        &:hover {
+                                            color: white;
+                                        }
+
+                                        &:after {
+                                            position: absolute;
+                                            content: "";
+                                            // top: 0;
+                                            right: 0;
+                                            bottom: 0;
+
+                                            width: 100%;
+                                            height: 0;
+                                            background-color: rgb(14, 12, 27);
+                                            transition: all .2s;
+                                        }
+
+                                        &:hover::after {
+                                            height: 100%;
+                                        } 
+                                    }
+                                }
+                                a {
+                                    width: calc(100% - 1px);
+
+                                    .btn2 {
+                                        width: 100%;
+                                        height: 80px;
+    
+    
+                                        .buton2 {
+                                            position: relative;
+                                            width: 100%;
+                                            height: 100%;
+                                            border: 1px solid rgb(81, 255, 150);
+                                            background-color: rgb(81, 255, 150);  
+                                            color: black;                
+                                            justify-content: center;
+                                            align-items: center;                   
+                                            .tb2 {
+                                                position: relative;
+                                                z-index: 2;
+                                            }
+    
+                                            &:hover {
+                                                color: rgb(81, 255, 150);
+                                            }
+    
+                                            &::after {
+                                                position: absolute;
+                                                content: "";
+                                                // top: 0;
+                                                right: 0;
+                                                bottom: 0;
+    
+                                                width: 100%;
+                                                height: 0;
+                                                background-color: rgb(14, 12, 27);
+                                                transition: all .2s;
+                                            }
+    
+                                            &:hover::after {
+                                                height: 100%;
+                                            }
+                                        }
+    
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin itemCompra600 {
+    .containerItem {
+        width: 100%;
+        height: auto;
+        margin-bottom: 40px;
+
+        justify-content: center;
+        align-items: center;
+
+        .containerCompra {
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+
+            .containerFotoO {
+                width: 100%;
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+    
+                .fotoO {
+
+                    .containerImg {
+                        width: 45vh;
+                        height: 45vh;
+                        
+    
+                        .imgO {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+
+                            border-radius: 2rem;
+                        }
+                    }
+                }
+            }
+    
+            .containerContenido {
+                width: 100%;
+                height: 100%;
+                margin-top: 80px;
+
+                background-color: rgb(14, 12, 27);
+                border-radius: 2rem;
+           
+                flex-direction: column;
+                justify-content: space-between;
+
+                .con1 {
+                    width: 70%;
+                    padding: 40px;
+                    .containerTituInfo {
+                        width: 100%;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: space-between;
+                        
+                        .containerTP {
+                            width: 100%;
+                            align-items: flex-start;
+    
+                            .tituloO {
+                                width: 100%;
+    
+                                .nombreO {
+                                    justify-content: flex-start;
+                                    word-wrap: break-word;
+                                }
+                                
+                                .tm {
+                                    font-size: 3.5rem;
+                                }
+                            }
+                        }
+    
+                        .containerDim {
+                            margin-top: 10px;
+                            width: 100%;
+
+                            .td {
+                                font-size: 1.8rem;
+                            }
+                        }
+                    }  
+                    
+                    .containerDesc {
+                        width: 100%;
+                        margin-top: 40px;
+                        .descO {
+                            width: 100%;
+                            .desContainer {
+                                width: 100%;                                
+                                .dp {
+                                    width: 100%;
+                                }
+                                .tdd {
+                                    font-size: 1.7rem;
+                                }
+                            }
+                        }
+                    }
+    
+                }
+            
+                .con2 {
+                    // width: 100%;
+                    padding: 40px;
+                    .containerBtn {
+                        width: 100%;
+                        height: 100%;
+                        .btoO {
+                            width: 100%;
+                            height: 100%;               
+                            .btnContainer {
+                                width: 100%;
+                                height: 100%;
+                                flex-direction: row;
+                                justify-content: flex-start;
+                                gap: 15px;
+                                               
+                                .btn1 {
+                                    width: 40%;
+                                    height: 80px;
+
+                                    .buton1 {
+                                        position: relative;
+                                        width: 100%;
+                                        height: 100%;
+                                        // border-radius: 1rem;
+                                        background-color: white; 
+                                        color: black;
+                                        border: 1px solid white;                  
+                                        justify-content: center;
+                                        align-items: center; 
+                                        transition: all .2s;
+                                       
+                                        .tb1 {
+                                            position: relative;
+                                            z-index: 2;
+                                        }
+
+                                        &:hover {
+                                            color: white;
+                                        }
+
+                                        &:after {
+                                            position: absolute;
+                                            content: "";
+                                            // top: 0;
+                                            right: 0;
+                                            bottom: 0;
+
+                                            width: 100%;
+                                            height: 0;
+                                            background-color: rgb(14, 12, 27);
+                                            transition: all .2s;
+                                        }
+
+                                        &:hover::after {
+                                            height: 100%;
+                                        } 
+                                    }
+                                }
+                                a {
+                                    width: 40%;
+
+                                    .btn2 {
+                                        width: 100%;
+                                        height: 80px;
+    
+    
+                                        .buton2 {
+                                            position: relative;
+                                            width: 100%;
+                                            height: 100%;
+                                            border: 1px solid rgb(81, 255, 150);
+                                            background-color: rgb(81, 255, 150);  
+                                            color: black;                
+                                            justify-content: center;
+                                            align-items: center;                   
+                                            .tb2 {
+                                                position: relative;
+                                                z-index: 2;
+                                            }
+    
+                                            &:hover {
+                                                color: rgb(81, 255, 150);
+                                            }
+    
+                                            &::after {
+                                                position: absolute;
+                                                content: "";
+                                                // top: 0;
+                                                right: 0;
+                                                bottom: 0;
+    
+                                                width: 100%;
+                                                height: 0;
+                                                background-color: rgb(14, 12, 27);
+                                                transition: all .2s;
+                                            }
+    
+                                            &:hover::after {
+                                                height: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin itemCompra300 {
+    .containerItem {
+        .containerCompra {
+            flex-direction: column;
+            align-items: center;
+            .containerFotoO {
+                justify-content: center;
+                .fotoO {
+                    .containerImg {
+                        width: 40vh;
+                        height: 40vh;
+                        
+    
+                        .imgO {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+
+                            border-radius: 2rem;
+                        }
+                    }
+                }
+            }
+    
+            .containerContenido {
+                width: 100%;
+                height: 100%;
+                margin-top: 80px;
+
+                background-color: rgb(14, 12, 27);
+                border-radius: 2rem;
+           
+                flex-direction: column;
+                justify-content: space-between;
+
+                .con1 {
+                    width: 70%;
+                    padding: 40px;
+                    .containerTituInfo {
+                        width: 100%;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: space-between;
+                        
+                        .containerTP {
+                            width: 100%;
+                            align-items: flex-start;
+    
+                            .tituloO {
+                                width: 100%;
+    
+                                .nombreO {
+                                    justify-content: flex-start;
+                                    word-wrap: break-word;
+                                }
+                                
+                                .tm {
+                                    font-size: 3.5rem;
+                                }
+                            }
+                        }
+    
+                        .containerDim {
+                            margin-top: 10px;
+                            width: 100%;
+
+                            .td {
+                                font-size: 1.8rem;
+                            }
+                        }
+                    }  
+                    
+                    .containerDesc {
+                        width: 100%;
+                        margin-top: 40px;
+                        .descO {
+                            width: 100%;
+                            .desContainer {
+                                width: 100%;                                
+                                .dp {
+                                    width: 100%;
+                                }
+                                .tdd {
+                                    font-size: 1.7rem;
+                                }
+                            }
+                        }
+                    }
+    
+                }
+                .con2 {                   
+                    padding: 40px;
+                    .containerBtn {
+                        width: 100%;
+                        height: 100%;
+                        .btoO {
+                            width: 100%;
+                            height: 100%;               
+                            .btnContainer {
+                                width: 100%;
+                                height: 100%;
+                                flex-direction: row;
+                                justify-content: flex-start;
+                                gap: 15px;
+                                               
+                                .btn1 {
+                                    width: 48%;
+                                    height: 80px;
+
+                                    .buton1 {
+                                        position: relative;
+                                        width: 100%;
+                                        height: 100%;
+                                        // border-radius: 1rem;
+                                        background-color: white; 
+                                        color: black;
+                                        border: 1px solid white;                  
+                                        justify-content: center;
+                                        align-items: center; 
+                                        transition: all .2s;
+                                       
+                                        .tb1 {
+                                            position: relative;
+                                            z-index: 2;
+                                        }
+
+                                        &:hover {
+                                            color: white;
+                                        }
+
+                                        &:after {
+                                            position: absolute;
+                                            content: "";
+                                            // top: 0;
+                                            right: 0;
+                                            bottom: 0;
+
+                                            width: 100%;
+                                            height: 0;
+                                            background-color: rgb(14, 12, 27);
+                                            transition: all .2s;
+                                        }
+
+                                        &:hover::after {
+                                            height: 100%;
+                                        } 
+                                    }
+                                }
+                                a {
+                                    width: 48%;
+
+                                    .btn2 {
+                                        width: 100%;
+                                        height: 80px;
+    
+    
+                                        .buton2 {
+                                            position: relative;
+                                            width: 100%;
+                                            height: 100%;
+                                            border: 1px solid rgb(81, 255, 150);
+                                            background-color: rgb(81, 255, 150);  
+                                            color: black;                
+                                            justify-content: center;
+                                            align-items: center;                   
+                                            .tb2 {
+                                                position: relative;
+                                                z-index: 2;
+                                            }
+    
+                                            &:hover {
+                                                color: rgb(81, 255, 150);
+                                            }
+    
+                                            &::after {
+                                                position: absolute;
+                                                content: "";
+                                                // top: 0;
+                                                right: 0;
+                                                bottom: 0;
+    
+                                                width: 100%;
+                                                height: 0;
+                                                background-color: rgb(14, 12, 27);
+                                                transition: all .2s;
+                                            }
+    
+                                            &:hover::after {
+                                                height: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 /* //////////////////////////////////////////////////////////////////////////////// */
