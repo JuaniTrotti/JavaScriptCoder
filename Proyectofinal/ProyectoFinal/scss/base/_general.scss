@@ -5,7 +5,6 @@
         max-width: 1760px;
         flex-basis: 1760px;
         margin: 0 80px;
-        // border: 1px solid white;
     
         flex-direction: column;
         align-items: center;
@@ -48,20 +47,6 @@ body {
 .textoHeader {
     font-family: var(--font-header);
     font-size: 1.3rem;
-}
-
-@mixin layer1 {
-    z-index: 1;
-    background-color: blanchedalmond;
-}
-
-@mixin layer2 {
-    z-index: 2;
-}
-
-@mixin layer3 {
-    z-index: 3;
-    background-color: blue;
 }
 
 .textoDimensiones {

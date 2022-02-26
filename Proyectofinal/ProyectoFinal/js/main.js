@@ -12,11 +12,15 @@ function cargarObras() {
         success: function(respuesta) {
             for (let i of respuesta) {
                 obras.push(new card(i.id, i.nombre, i.precio, i.desc, i.img, i.dim))
-                $("#containerO").append(`<a href="./itemCompra.html" id="${i.id}" class="links ">
+                $("#containerO").append(`<a href="./itemCompra.html" id="${i.id}" class="link">
                                             <div class="obra cFlex">
                                                 <img src="${i.img}" class="imagenObra">
                                             </div>
-                </a>`);
+                                            <div class="containerInfoCard cFlex">
+                                                <div class="nombreCard cFlex textoTituloObra tc">${i.nombre}</div>
+                                                <div class="precioCard cFlex textoDimensiones tc">$${i.precio}</div>
+                                            </div>
+                </a>`)
 
                 let id = document.getElementById(i.id);
                 id.addEventListener("click", function() {
