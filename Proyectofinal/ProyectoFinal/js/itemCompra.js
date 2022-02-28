@@ -1,6 +1,7 @@
 // variables
 var linkId = JSON.parse(localStorage.getItem('href'));
 const popUp = document.querySelector(".popUpCarro");
+const popUpEr = document.querySelector(".popUpCarro1")
 const carro = [];
 
 // funciones
@@ -48,12 +49,66 @@ function crearBot() {
 function crearPop(o) {
     $(".popUpCarro").append(`<div class="containerPop cFlex">
                                 <div class="textoTituloObra tpop cFlex">
-                                    <h2>Se agregó ${o.nombre} al carro.</h2>
+                                    <h2>Se agregó ${o.nombre} al carro</h2>
                                 </div>
                                 <div class="btnCerrar cFlex">
                                     <img src="./img/svg/close.svg" alt="btnClose">
                                 </div>
                             </div>`)
+}
+
+function crearPopErr() {
+    $(".popUpCarro1").append(`<div class="containerPop1 cFlex">
+                                <div class="textoTituloObra tpop cFlex">
+                                    <h2>The item already exists in the cart</h2>
+                                </div>
+                            </div>`)                  
+}
+
+function search(arr, e) {
+    console.log(arr)
+    console.log(e)
+    for(let i of arr) {
+        if (i == e) {
+            return true;
+        }
+    }
+    return false;
+}
+
+function popAr() {
+    popUp.classList.remove("popUpCarroHide");
+    popUp.classList.add("popUpCarroShow");
+    setTimeout(() => {
+        popUp.classList.remove("popUpCarroShow");
+        popUp.classList.add("popUpCarroHide");
+    }, 2000)
+}
+
+function popEr() {
+    popUpEr.classList.remove("popUpCarroHide1");
+    popUpEr.classList.add("popUpCarroShow1");
+    setTimeout(() => {
+        popUpEr.classList.remove("popUpCarroShow1");
+        popUpEr.classList.add("popUpCarroHide1");
+    }, 2000)
+}
+
+function cargarCarro(){
+    if (localStorage.getItem("carro") == null) {
+        carro.push(linkId.id);
+        localStorage.setItem("carro", JSON.stringify(carro));
+        popAr();
+    } else {
+        var carroTemp = JSON.parse(localStorage.getItem('carro'));
+        if (search(carroTemp, linkId.id) == true) {
+            popEr();
+        } else {
+            popAr();
+            carroTemp.push(linkId.id);
+            localStorage.setItem("carro", JSON.stringify(carroTemp));
+        };
+    };
 }
 
 
@@ -63,31 +118,18 @@ $( document ).ready(function() {
     // main
     console.log(linkId);
 
-
     crearFoto(linkId);
     crearTitulo(linkId);
     crearDesc(linkId);
     crearBot();
     crearPop(linkId);
+    crearPopErr();
 
-    // uso un array que almacena los id de las obras que agrego al carrito
     $(".btn1").on("click", function() {
-        if (localStorage.getItem("carro") == null) {
-            carro.push(linkId.id);
-            localStorage.setItem("carro", JSON.stringify(carro));
-        } else {
-            var carroTemp = JSON.parse(localStorage.getItem('carro'));
-            carroTemp.push(linkId.id);
-            localStorage.setItem("carro", JSON.stringify(carroTemp));
-        };
-
-        popUp.classList.remove("popUpCarroHide");
-        popUp.classList.add("popUpCarroShow");
-
-        setTimeout(() => {
-            popUp.classList.remove("popUpCarroShow");
-            popUp.classList.add("popUpCarroHide");
-        }, 2000)
+        cargarCarro();
+    });
+    $(".btn2").on("click", function() {
+        
     });
 });
 

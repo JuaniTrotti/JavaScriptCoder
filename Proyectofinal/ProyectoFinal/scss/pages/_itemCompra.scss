@@ -973,6 +973,49 @@
             }
         }
     }
+    .containerPop1 {
+        justify-content: center;
+
+        .popUpCarroHide1 {
+            margin-bottom: -18vh;
+            transition: all ease .3s;
+        }
+    
+        .popUpCarroShow1 {
+            margin-bottom: 6vh;
+            transition: all ease .3s;
+        }
+    
+        .popUpCarro1 {
+            max-width: 1500px;
+            height: 8vh;
+            position: fixed;
+            z-index: 10;
+            background-color: #FF5A5A;
+            border-radius: 3rem;
+            bottom: 10px;
+
+            box-shadow: 10px 11px 27px 5px rgba(0,0,0,0.24);
+            -webkit-box-shadow: 10px 11px 27px 5px rgba(0,0,0,0.24);
+            -moz-box-shadow: 10px 11px 27px 5px rgba(0,0,0,0.24);
+
+            align-items: center;
+
+            .containerPop1 {
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 30px;
+                gap: 30px;
+
+                height: 25%;
+
+                .tpop {
+                    color: #ffffff;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
 }
 
 @mixin popUp1200 {
