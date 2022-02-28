@@ -17,7 +17,7 @@
                 width: 90%;
                 min-height: 400px;
                 justify-content: center;
-
+                margin-top: 40px;
 
                 .carrito {
                     width: 60%;
@@ -27,7 +27,7 @@
                     align-items: flex-start;
                     justify-content: flex-start;
                     gap: 20px;
-                    padding: 15px 35px;
+                    padding: 25px 35px;
                     .containerElementos {
                         width: 100%;
                         flex-direction: column;
@@ -35,34 +35,33 @@
                         align-items: flex-start;
                         .elementos {
                             justify-content: space-between;
+                            align-items: center;
                             height: 80px;
                             width: 100%;   
                             .nombreEl {
                                 height: 100%;
-                                width: 50%;
+                                width: 60%;
                                 justify-content: flex-start;
                                 align-items: center;
                             }   
                             .borraItem {
                                 height: 100%;
-                                width: 25%;
+                                width: 10%;
                                 cursor: pointer;
                                 justify-content: flex-start;
                                 align-items: center;
+                                padding-top: 5px;
+
+                                .btnSvg {
+                                    transform: scale(.7);
+                                }
                             }
                             .precioEl {
                                 height: 100%;
-                                width: 25%;
+                                width: 30%;
                                 justify-content: flex-end;
                                 align-items: center;
                             }
-                        }
-                    }
-                    .opCarro {
-                        width: 100%;
-                        justify-content: space-between;
-                        .btnBorrarCarro {
-                            cursor: pointer;
                         }
                     }
                 }
@@ -72,10 +71,15 @@
                     flex-direction: column;
                     align-items: flex-start;
                     justify-content: flex-start;
-                    gap: 20px;
+                    gap: 30px;
                     border-radius: 0 1.5rem 1.5rem 0;
-                    padding: 15px 35px;
+                    padding: 25px 35px;
                     background-color: #12151D;
+
+                    .tt {
+                        font-size: 4rem;
+                        color: rgb(233, 233, 233);
+                    }
 
                     .opCarro {
                         width: 100%;
@@ -85,6 +89,7 @@
                         .btn1 {
                             width: 45%;
                             height: 80px;
+                            cursor: pointer;
                         
                             .buton1 {
                                 position: relative;
@@ -126,6 +131,7 @@
                         .btn2 {
                             width: 45%;
                             height: 80px;
+                            cursor: pointer;
                         
                             .buton2 {
                                 position: relative;
@@ -168,5 +174,149 @@
             }
         }
     }
+}
+
+@mixin carritoEl1200 {
+    .containerCarro {
+        .pagina {
+            .carritoContainer {
+                .finCompra {
+                    .opCarro {
+                        .textoDimensiones {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin carritoEl900 {
+    .containerCarro {
+        .pagina {
+            .carritoContainer {
+                flex-direction: column;
+                align-items: center;
+
+                .carrito {
+                    width: 100%;
+                    border-radius: 1.5rem 1.5rem 0 0;
+                }
+                
+                .finCompra {
+                    width: 100%;
+                    border-radius: 0 0 1.5rem 1.5rem;
+                }
+            }
+        }
+    }    
+}
+
+@mixin carritoEl600 {
+    .containerCarro {
+        .pagina {
+            .carritoContainer {
+                flex-direction: column;
+                align-items: center;
+
+                .carrito {
+                    width: 100%;
+                    border-radius: 1.5rem 1.5rem 0 0;
+
+                    .textoTituloObra {
+                        font-size: 6rem;
+                    }
+
+                    .containerElementos {
+                        .elementos {
+                            .textoDimensiones {
+                                font-size: 1.8rem;
+                            }
+                        }
+                    }
+                }
+                
+                .finCompra {
+                    width: 100%;
+                    border-radius: 0 0 1.5rem 1.5rem;
+
+                    .textoTituloObra {
+                        font-size: 6rem;
+                    }
+
+                    .tt {
+                        font-size: 2.2rem;
+                    }
+
+                    .opCarro {
+                        .textoDimensiones {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}
+
+@mixin carritoEl300 {
+    .containerCarro {
+        .pagina {
+            .carritoContainer {
+                flex-direction: column;
+                align-items: center;
+                margin-top: calc(40px + 8vh);
+
+                .carrito {
+                    width: 100%;
+                    border-radius: 1.5rem 1.5rem 0 0;
+
+                    .textoTituloObra {
+                        font-size: 5rem;
+                    }
+
+                    .containerElementos {
+                        .elementos {
+                            .textoDimensiones {
+                                font-size: 1.2rem;
+                            }
+
+                            .borraItem {
+                                transform: scale(.5);
+                            }
+                        }
+                    }
+                }
+                
+                .finCompra {
+                    width: 100%;
+                    border-radius: 0 0 1.5rem 1.5rem;
+
+                    .textoTituloObra {
+                        font-size: 5rem;
+                    }
+
+                    .tt {
+                        font-size: 2.8rem;
+                    }
+
+                    .opCarro {
+                        .textoDimensiones {
+                            font-size: 1.2rem;
+                        }
+
+                        .btn1 {
+                            height: 50px;
+                        }
+
+                        .btn2 {
+                            height: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }    
 }
 /* //////////////////////////////////////////////////////////////////////////////// */

@@ -7,12 +7,12 @@ function cargar() {
         url: "./json/cartData.json",
         success: function(respuesta) {
             // reinicio el precio final
-            $(".precioFinalCarro").empty();
+            $(".totalCompra").empty();
 
             if (localStorage.getItem("carro") == null) {
                 console.log("el carrito esta vacio");
                 // seteo el precio total en 0
-                $(".precioFinalCarro").append(`<h2 class="textoDimensiones">$0</h2>`) 
+                $(".totalCompra").append(`<h2 class="textoTituloObra lb tt">$0</h2>`) 
             } else {
                 var carroItem = JSON.parse(localStorage.getItem("carro"));
                 var suma = 0;
@@ -21,9 +21,9 @@ function cargar() {
                     for(let i of respuesta) {
                         if(item == i.id){
                             $(".containerElementos").append(`<div class="elementos cFlex">
-                                                                <div class="borraItem cFlex" id="${i.id}"><h2 class="textoDimensiones">Delete item</h2></div>
-                                                                <div class="nombreEl cFlex"><h2 class="textoDimensiones">${i.nombre}</h2></div>        
-                                                                <div class="precioEl cFlex"><h2 class="textoDimensiones">$${i.precio}</h2></div>
+                                                                <div class="borraItem cFlex" id="${i.id}"><img src="./img/svg/closeRed.svg" alt="boton eliminar elemento" class="btnSvg"></div>
+                                                                <div class="nombreEl cFlex"><h2 class="textoDimensiones lb">${i.nombre}</h2></div>        
+                                                                <div class="precioEl cFlex"><h2 class="textoDimensiones lb">$${i.precio}</h2></div>
                             </div>`)
                                // total de la compra
                             suma += parseInt(i.precio);
@@ -37,7 +37,7 @@ function cargar() {
                         };
                     };
                 };
-                $(".precioFinalCarro").append(`<h2 class="textoDimensiones">$${suma}</h2>`) 
+                $(".totalCompra").append(`<h2 class="textoTituloObra lb tt">$${suma}</h2>`) 
             };
         },
         error: function(){
@@ -45,6 +45,20 @@ function cargar() {
         }
     });
 }
+
+function cargarUI() {
+    $(".opCarro").append(`<div class="btn2 cursorHover cFlex">
+                            <div class="buton2 btnBorrarCarro cFlex">
+                                <h2 class="textoDimensiones tb2 tb">Vaciar carro</h2>
+                            </div>
+                        </div>
+                        <div class="btn1 cursorHover cFlex">
+                            <div class="buton1 cFlex">
+                                <h2 class="textoDimensiones tb1 tb">Comprar</h2>
+                            </div>
+                        </div>`)
+};
+
 
 // vacia el carrito
 function borrarTodo() {
@@ -77,6 +91,7 @@ $( document).ready(function() {
 
     // carga los elementos del carrito
     cargar();
+    cargarUI();
 
     // boton para vaciar el carrito
     $(".btnBorrarCarro").on("click", function() {
