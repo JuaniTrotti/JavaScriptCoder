@@ -3419,7 +3419,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 1.5rem 1.5rem 0 0;
   }
   .containerCarro .pagina .carritoContainer .carrito .textoTituloObra {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   .containerCarro .pagina .carritoContainer .carrito .containerElementos .elementos .textoDimensiones {
     font-size: 1.2rem;
@@ -3432,7 +3432,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 0 0 1.5rem 1.5rem;
   }
   .containerCarro .pagina .carritoContainer .finCompra .textoTituloObra {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   .containerCarro .pagina .carritoContainer .finCompra .tt {
     font-size: 2.8rem;
