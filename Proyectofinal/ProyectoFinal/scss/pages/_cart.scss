@@ -263,7 +263,9 @@
 @mixin carritoEl300 {
     .containerCarro {
         .pagina {
+            margin: 0 40px;
             .carritoContainer {
+                width: 96%;
                 flex-direction: column;
                 align-items: center;
                 margin-top: calc(40px + 8vh);
@@ -305,7 +307,7 @@
 
                     .opCarro {
                         .textoDimensiones {
-                            font-size: 1.2rem;
+                            font-size: 1rem;
                         }
 
                         .btn1 {

@@ -3409,7 +3409,11 @@ body::-webkit-scrollbar-thumb {
     height: 100%;
   }
 
+  .containerCarro .pagina {
+    margin: 0 40px;
+  }
   .containerCarro .pagina .carritoContainer {
+    width: 96%;
     flex-direction: column;
     align-items: center;
     margin-top: calc(40px + 8vh);
@@ -3440,7 +3444,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 2.2rem;
   }
   .containerCarro .pagina .carritoContainer .finCompra .opCarro .textoDimensiones {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .containerCarro .pagina .carritoContainer .finCompra .opCarro .btn1 {
     height: 50px;
