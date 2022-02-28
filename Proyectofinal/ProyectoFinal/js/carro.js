@@ -1,7 +1,6 @@
 // variables
 
 // funciones
-
 function cargar() {
     $.ajax({
         method: "GET",
@@ -18,29 +17,13 @@ function cargar() {
                 var carroItem = JSON.parse(localStorage.getItem("carro"));
                 var suma = 0;
                 for(let item of carroItem) {
-
-                    // use dos formas para crear los elementos del carro
-
-                    // // forma con hardcoreo de datos
-                    // $(".containerElementos").append(`<div class="elementos cFlex"">
-                    //             <div class="nombreEl cFlex"><h2 class="textoDimensiones">${respuesta[item-1].nombre}</h2></div>
-                    //             <div class="borraItem cFlex id="${i.id}""><h2 class="textoDimensiones">Delete item</h2></div>
-                    //             <div class="precioEl cFlex"><h2 class="textoDimensiones">${respuesta[item-1].precio}</h2></div>
-                    // </div>`)
-
-                    // // agregar boton para borrar
-                    // $(".borraItem").on("click", function() {
-                    //     console.log("hola soy: " + respuesta[item-1].id)
-                    // });
-
-
                     // forma sin hardcoreo de datos
                     for(let i of respuesta) {
                         if(item == i.id){
                             $(".containerElementos").append(`<div class="elementos cFlex">
-                                                                <div class="nombreEl cFlex"><h2 class="textoDimensiones">${i.nombre}</h2></div>
                                                                 <div class="borraItem cFlex" id="${i.id}"><h2 class="textoDimensiones">Delete item</h2></div>
-                                                                <div class="precioEl cFlex"><h2 class="textoDimensiones">${i.precio}</h2></div>
+                                                                <div class="nombreEl cFlex"><h2 class="textoDimensiones">${i.nombre}</h2></div>        
+                                                                <div class="precioEl cFlex"><h2 class="textoDimensiones">$${i.precio}</h2></div>
                             </div>`)
                                // total de la compra
                             suma += parseInt(i.precio);
@@ -54,7 +37,7 @@ function cargar() {
                         };
                     };
                 };
-                $(".precioFinalCarro").append(`<h2 class="textoDimensiones">$ ${suma}</h2>`) 
+                $(".precioFinalCarro").append(`<h2 class="textoDimensiones">$${suma}</h2>`) 
             };
         },
         error: function(){

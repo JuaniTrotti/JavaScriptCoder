@@ -911,4 +911,72 @@
     }
 }
 
+@mixin popUp {
+    .containerPop {
+        justify-content: center;
+
+        .popUpCarroHide {
+            margin-bottom: -18vh;
+            transition: all ease .3s;
+        }
+    
+        .popUpCarroShow {
+            margin-bottom: 6vh;
+            transition: all ease .3s;
+        }
+    
+        .popUpCarro {
+            max-width: 1500px;
+            height: 8vh;
+            position: fixed;
+            z-index: 10;
+            background-color: rgb(255, 255, 255);
+            border-radius: 3rem;
+            bottom: 10px;
+
+            box-shadow: 10px 11px 27px 5px rgba(0,0,0,0.24);
+            -webkit-box-shadow: 10px 11px 27px 5px rgba(0,0,0,0.24);
+            -moz-box-shadow: 10px 11px 27px 5px rgba(0,0,0,0.24);
+
+            align-items: center;
+
+            .containerPop {
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 30px;
+                gap: 30px;
+
+                height: 25%;
+
+                .tpop {
+                    color: #606060;
+                    font-size: 1.1rem;
+                }
+
+                .btnCerrar {
+                    padding: 10px;
+                }
+        
+                .btnCerrar:hover {
+                    border-radius: 100%;
+                    animation: closeBtn ease .8s forwards; 
+                }
+
+                @keyframes closeBtn {
+                    0% {
+                        background-color: #ffffff;
+                    }
+                    100% {
+                        background-color: #f1f1f1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin popUp1200 {
+
+}
+
 /* //////////////////////////////////////////////////////////////////////////////// */

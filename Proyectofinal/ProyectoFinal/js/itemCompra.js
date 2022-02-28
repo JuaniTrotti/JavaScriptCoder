@@ -1,6 +1,6 @@
 // variables
 var linkId = JSON.parse(localStorage.getItem('href'));
-const foto = document.querySelector(".fotoO");
+const popUp = document.querySelector(".popUpCarro");
 const carro = [];
 
 // funciones
@@ -45,6 +45,17 @@ function crearBot() {
                      </div>`);
 };
 
+function crearPop(o) {
+    $(".popUpCarro").append(`<div class="containerPop cFlex">
+                                <div class="textoTituloObra tpop cFlex">
+                                    <h2>Se agregó ${o.nombre} al carro.</h2>
+                                </div>
+                                <div class="btnCerrar cFlex">
+                                    <img src="./img/svg/close.svg" alt="btnClose">
+                                </div>
+                            </div>`)
+}
+
 
 $( document ).ready(function() {
     console.log( "ready!" );
@@ -57,19 +68,26 @@ $( document ).ready(function() {
     crearTitulo(linkId);
     crearDesc(linkId);
     crearBot();
+    crearPop(linkId);
 
     // uso un array que almacena los id de las obras que agrego al carrito
     $(".btn1").on("click", function() {
         if (localStorage.getItem("carro") == null) {
-            console.log("no existe");
             carro.push(linkId.id);
             localStorage.setItem("carro", JSON.stringify(carro));
         } else {
-            console.log("existe");
             var carroTemp = JSON.parse(localStorage.getItem('carro'));
             carroTemp.push(linkId.id);
             localStorage.setItem("carro", JSON.stringify(carroTemp));
         };
+
+        popUp.classList.remove("popUpCarroHide");
+        popUp.classList.add("popUpCarroShow");
+
+        setTimeout(() => {
+            popUp.classList.remove("popUpCarroShow");
+            popUp.classList.add("popUpCarroHide");
+        }, 2000)
     });
 });
 

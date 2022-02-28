@@ -55,12 +55,10 @@ $(document).ready(function() {
     
         const hoverTrue = () => {
             pointer.classList.add("hover");
-            console.log("entre");
         }
     
         const hoverFalse = () => {
             pointer.classList.remove("hover");
-            console.log("sali");
         }
         
         // main

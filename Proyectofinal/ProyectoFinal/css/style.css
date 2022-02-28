@@ -691,61 +691,155 @@ body::-webkit-scrollbar-thumb {
   .containerBody .containerItem .containerCompra .containerContenido .con2 .containerBtn .btoO .btnContainer .btn2 .buton2:hover::after {
     height: 100%;
   }
-  .containerBody .carritoContainer {
-    width: 70%;
-    min-height: 50vh;
-    margin-top: 50px;
+
+  .containerCarro {
     justify-content: center;
+    align-items: flex-start;
+    flex-grow: 1;
+    min-height: 92vh;
+  }
+  .containerCarro .pagina {
+    max-width: 1760px;
+    flex-basis: 1760px;
+    margin: 0 80px;
+    flex-direction: column;
     align-items: center;
   }
-  .containerBody .carritoContainer .carrito {
-    width: 100%;
-    height: 100%;
-    background-color: #3f3f3f;
-    border-radius: 1.5rem;
+  .containerCarro .pagina .carritoContainer {
+    width: 90%;
+    min-height: 400px;
+    justify-content: center;
+  }
+  .containerCarro .pagina .carritoContainer .carrito {
+    width: 60%;
+    background-color: #1B1F29;
+    border-radius: 1.5rem 0 0 1.5rem;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 20px;
-    padding: 20px 0;
-    padding: 0 5%;
+    padding: 15px 35px;
   }
-  .containerBody .carritoContainer .carrito .containerElementos {
+  .containerCarro .pagina .carritoContainer .carrito .containerElementos {
     width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
   }
-  .containerBody .carritoContainer .carrito .containerElementos .elementos {
+  .containerCarro .pagina .carritoContainer .carrito .containerElementos .elementos {
     justify-content: space-between;
     height: 80px;
     width: 100%;
   }
-  .containerBody .carritoContainer .carrito .containerElementos .elementos .nombreEl {
+  .containerCarro .pagina .carritoContainer .carrito .containerElementos .elementos .nombreEl {
     height: 100%;
     width: 50%;
     justify-content: flex-start;
     align-items: center;
   }
-  .containerBody .carritoContainer .carrito .containerElementos .elementos .borraItem {
+  .containerCarro .pagina .carritoContainer .carrito .containerElementos .elementos .borraItem {
     height: 100%;
     width: 25%;
     cursor: pointer;
     justify-content: flex-start;
     align-items: center;
   }
-  .containerBody .carritoContainer .carrito .containerElementos .elementos .precioEl {
+  .containerCarro .pagina .carritoContainer .carrito .containerElementos .elementos .precioEl {
     height: 100%;
     width: 25%;
     justify-content: flex-end;
     align-items: center;
   }
-  .containerBody .carritoContainer .carrito .opCarro {
+  .containerCarro .pagina .carritoContainer .carrito .opCarro {
     width: 100%;
     justify-content: space-between;
   }
-  .containerBody .carritoContainer .carrito .opCarro .btnBorrarCarro {
+  .containerCarro .pagina .carritoContainer .carrito .opCarro .btnBorrarCarro {
     cursor: pointer;
+  }
+  .containerCarro .pagina .carritoContainer .finCompra {
+    width: 40%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    border-radius: 0 1.5rem 1.5rem 0;
+    padding: 15px 35px;
+    background-color: #12151D;
+  }
+  .containerCarro .pagina .carritoContainer .finCompra .opCarro {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .containerCarro .pagina .carritoContainer .finCompra .opCarro .btn1 {
+    width: 45%;
+    height: 80px;
+  }
+  .containerCarro .pagina .carritoContainer .finCompra .opCarro .btn1 .buton1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #51ff96;
+    background-color: #51ff96;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+  }
+  .containerCarro .pagina .carritoContainer .finCompra .opCarro .btn1 .buton1 .tb1 {
+    position: relative;
+    z-index: 2;
+  }
+  .containerCarro .pagina .carritoContainer .finCompra .opCarro .btn1 .buton1:hover {
+    color: #51ff96;
+  }
+  .containerCarro .pagina .carritoContainer .finCompra .opCarro .btn1 .buton1:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: var(--backgroundColor);
+    transition: all 0.2s;
+  }
+  .containerCarro .pagina .carritoContainer .finCompra .opCarro .btn1 .buton1:hover::after {
+    height: 100%;
+  }
+  .containerCarro .pagina .carritoContainer .finCompra .opCarro .btn2 {
+    width: 45%;
+    height: 80px;
+  }
+  .containerCarro .pagina .carritoContainer .finCompra .opCarro .btn2 .buton2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #FF5A5A;
+    background-color: #FF5A5A;
+    color: black;
+    justify-content: center;
+    align-items: center;
+  }
+  .containerCarro .pagina .carritoContainer .finCompra .opCarro .btn2 .buton2 .tb2 {
+    position: relative;
+    z-index: 2;
+  }
+  .containerCarro .pagina .carritoContainer .finCompra .opCarro .btn2 .buton2:hover {
+    color: #FF5A5A;
+  }
+  .containerCarro .pagina .carritoContainer .finCompra .opCarro .btn2 .buton2::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: var(--backgroundColor);
+    transition: all 0.2s;
+  }
+  .containerCarro .pagina .carritoContainer .finCompra .opCarro .btn2 .buton2:hover::after {
+    height: 100%;
   }
 
   .hide {
@@ -814,6 +908,56 @@ body::-webkit-scrollbar-thumb {
     }
     100% {
       opacity: 1;
+    }
+  }
+  .containerPop {
+    justify-content: center;
+  }
+  .containerPop .popUpCarroHide {
+    margin-bottom: -18vh;
+    transition: all ease 0.3s;
+  }
+  .containerPop .popUpCarroShow {
+    margin-bottom: 6vh;
+    transition: all ease 0.3s;
+  }
+  .containerPop .popUpCarro {
+    max-width: 1500px;
+    height: 8vh;
+    position: fixed;
+    z-index: 10;
+    background-color: white;
+    border-radius: 3rem;
+    bottom: 10px;
+    box-shadow: 10px 11px 27px 5px rgba(0, 0, 0, 0.24);
+    -webkit-box-shadow: 10px 11px 27px 5px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 10px 11px 27px 5px rgba(0, 0, 0, 0.24);
+    align-items: center;
+  }
+  .containerPop .popUpCarro .containerPop {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    gap: 30px;
+    height: 25%;
+  }
+  .containerPop .popUpCarro .containerPop .tpop {
+    color: #606060;
+    font-size: 1.1rem;
+  }
+  .containerPop .popUpCarro .containerPop .btnCerrar {
+    padding: 10px;
+  }
+  .containerPop .popUpCarro .containerPop .btnCerrar:hover {
+    border-radius: 100%;
+    animation: closeBtn ease 0.8s forwards;
+  }
+  @keyframes closeBtn {
+    0% {
+      background-color: #ffffff;
+    }
+    100% {
+      background-color: #f1f1f1;
     }
   }
 }
@@ -1138,6 +1282,57 @@ body::-webkit-scrollbar-thumb {
 
   .menuHam {
     width: 50vw;
+  }
+
+  .containerPop {
+    justify-content: center;
+  }
+  .containerPop .popUpCarroHide {
+    margin-bottom: -18vh;
+    transition: all ease 0.3s;
+  }
+  .containerPop .popUpCarroShow {
+    margin-bottom: 6vh;
+    transition: all ease 0.3s;
+  }
+  .containerPop .popUpCarro {
+    max-width: 1500px;
+    height: 8vh;
+    position: fixed;
+    z-index: 10;
+    background-color: white;
+    border-radius: 3rem;
+    bottom: 10px;
+    box-shadow: 10px 11px 27px 5px rgba(0, 0, 0, 0.24);
+    -webkit-box-shadow: 10px 11px 27px 5px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 10px 11px 27px 5px rgba(0, 0, 0, 0.24);
+    align-items: center;
+  }
+  .containerPop .popUpCarro .containerPop {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    gap: 30px;
+    height: 25%;
+  }
+  .containerPop .popUpCarro .containerPop .tpop {
+    color: #606060;
+    font-size: 1.1rem;
+  }
+  .containerPop .popUpCarro .containerPop .btnCerrar {
+    padding: 10px;
+  }
+  .containerPop .popUpCarro .containerPop .btnCerrar:hover {
+    border-radius: 100%;
+    animation: closeBtn ease 0.8s forwards;
+  }
+  @keyframes closeBtn {
+    0% {
+      background-color: #ffffff;
+    }
+    100% {
+      background-color: #f1f1f1;
+    }
   }
 }
 @media screen and (max-width: 1200px) and (min-width: 900px) {
@@ -1595,6 +1790,57 @@ body::-webkit-scrollbar-thumb {
   .menuHam .containerHam .infoHam .opHam .textoPrecio {
     font-size: 3em;
   }
+
+  .containerPop {
+    justify-content: center;
+  }
+  .containerPop .popUpCarroHide {
+    margin-bottom: -18vh;
+    transition: all ease 0.3s;
+  }
+  .containerPop .popUpCarroShow {
+    margin-bottom: 6vh;
+    transition: all ease 0.3s;
+  }
+  .containerPop .popUpCarro {
+    max-width: 1500px;
+    height: 8vh;
+    position: fixed;
+    z-index: 10;
+    background-color: white;
+    border-radius: 3rem;
+    bottom: 10px;
+    box-shadow: 10px 11px 27px 5px rgba(0, 0, 0, 0.24);
+    -webkit-box-shadow: 10px 11px 27px 5px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 10px 11px 27px 5px rgba(0, 0, 0, 0.24);
+    align-items: center;
+  }
+  .containerPop .popUpCarro .containerPop {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    gap: 30px;
+    height: 25%;
+  }
+  .containerPop .popUpCarro .containerPop .tpop {
+    color: #606060;
+    font-size: 1.1rem;
+  }
+  .containerPop .popUpCarro .containerPop .btnCerrar {
+    padding: 10px;
+  }
+  .containerPop .popUpCarro .containerPop .btnCerrar:hover {
+    border-radius: 100%;
+    animation: closeBtn ease 0.8s forwards;
+  }
+  @keyframes closeBtn {
+    0% {
+      background-color: #ffffff;
+    }
+    100% {
+      background-color: #f1f1f1;
+    }
+  }
 }
 @media screen and (max-width: 900px) and (min-width: 600px) {
   .containerBody {
@@ -2051,6 +2297,57 @@ body::-webkit-scrollbar-thumb {
   }
   .menuHam .containerHam .infoHam .opHam .textoPrecio {
     font-size: 2.5em;
+  }
+
+  .containerPop {
+    justify-content: center;
+  }
+  .containerPop .popUpCarroHide {
+    margin-bottom: -18vh;
+    transition: all ease 0.3s;
+  }
+  .containerPop .popUpCarroShow {
+    margin-bottom: 6vh;
+    transition: all ease 0.3s;
+  }
+  .containerPop .popUpCarro {
+    max-width: 1500px;
+    height: 8vh;
+    position: fixed;
+    z-index: 10;
+    background-color: white;
+    border-radius: 3rem;
+    bottom: 10px;
+    box-shadow: 10px 11px 27px 5px rgba(0, 0, 0, 0.24);
+    -webkit-box-shadow: 10px 11px 27px 5px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 10px 11px 27px 5px rgba(0, 0, 0, 0.24);
+    align-items: center;
+  }
+  .containerPop .popUpCarro .containerPop {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    gap: 30px;
+    height: 25%;
+  }
+  .containerPop .popUpCarro .containerPop .tpop {
+    color: #606060;
+    font-size: 1.1rem;
+  }
+  .containerPop .popUpCarro .containerPop .btnCerrar {
+    padding: 10px;
+  }
+  .containerPop .popUpCarro .containerPop .btnCerrar:hover {
+    border-radius: 100%;
+    animation: closeBtn ease 0.8s forwards;
+  }
+  @keyframes closeBtn {
+    0% {
+      background-color: #ffffff;
+    }
+    100% {
+      background-color: #f1f1f1;
+    }
   }
 }
 @media screen and (max-width: 600px) and (min-width: 200px) {
@@ -2550,6 +2847,57 @@ body::-webkit-scrollbar-thumb {
   }
   .menuHam .containerHam .infoHam .opHam .textoPrecio {
     font-size: 2em;
+  }
+
+  .containerPop {
+    justify-content: center;
+  }
+  .containerPop .popUpCarroHide {
+    margin-bottom: -18vh;
+    transition: all ease 0.3s;
+  }
+  .containerPop .popUpCarroShow {
+    margin-bottom: 6vh;
+    transition: all ease 0.3s;
+  }
+  .containerPop .popUpCarro {
+    max-width: 1500px;
+    height: 8vh;
+    position: fixed;
+    z-index: 10;
+    background-color: white;
+    border-radius: 3rem;
+    bottom: 10px;
+    box-shadow: 10px 11px 27px 5px rgba(0, 0, 0, 0.24);
+    -webkit-box-shadow: 10px 11px 27px 5px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 10px 11px 27px 5px rgba(0, 0, 0, 0.24);
+    align-items: center;
+  }
+  .containerPop .popUpCarro .containerPop {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    gap: 30px;
+    height: 25%;
+  }
+  .containerPop .popUpCarro .containerPop .tpop {
+    color: #606060;
+    font-size: 1.1rem;
+  }
+  .containerPop .popUpCarro .containerPop .btnCerrar {
+    padding: 10px;
+  }
+  .containerPop .popUpCarro .containerPop .btnCerrar:hover {
+    border-radius: 100%;
+    animation: closeBtn ease 0.8s forwards;
+  }
+  @keyframes closeBtn {
+    0% {
+      background-color: #ffffff;
+    }
+    100% {
+      background-color: #f1f1f1;
+    }
   }
 }
 /* //////////////////////////////////////////////////////////////////////////////// */

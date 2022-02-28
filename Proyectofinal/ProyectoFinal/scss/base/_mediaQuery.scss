@@ -14,19 +14,15 @@
         flex-grow: 1;
         align-items: center;
         min-height: 92vh;
-
         @include pagina;
-
         @include main;
-
         @include card;
-
         @include itemCompra;
-
-        @include carritoEl;
     }
 
+    @include carritoEl;
     @include menuHam;
+    @include popUp;
 }   
 
 @media screen and (max-width: 1800px) and (min-width: 1200px) {
@@ -34,19 +30,17 @@
         justify-content: center;
         align-items: center;
         min-height: 92vh;
-
         @include paginaMenor;
-
         @include main1200;
-
         @include card1200;
-        
         @include itemCompra;
         @include itemCompra1200;
     }
 
     @include menuHam;
     @include menuHam1200;
+    @include popUp;
+    @include popUp1200;
 }
 
 @media screen and (max-width: 1200px) and (min-width: 900px) {
@@ -54,19 +48,16 @@
         justify-content: center;
         align-items: center;
         min-height: 92vh;
-
         @include paginaMenor;
-
         @include main900;
-
         @include card900;
-
         @include itemCompra;
         @include itemCompra900;
     }
 
     @include menuHam;
     @include menuHam900;
+    @include popUp;
 }
 
 @media screen and (max-width: 900px) and (min-width: 600px) {
@@ -74,20 +65,16 @@
         justify-content: center;
         align-items: center;
         min-height: 92vh;
-
-
         @include paginaMenor;
-
         @include main600;
-
         @include card600;
-
         @include itemCompra;
         @include itemCompra600;
     }
 
     @include menuHam;
     @include menuHam600;
+    @include popUp;
 }
 
 @media screen and (max-width: 600px) and (min-width: 200px) {
@@ -95,13 +82,9 @@
         justify-content: center;
         align-items: center;
         min-height: 92vh;
-
         @include paginaMenor;
-
         @include main300;
-
         @include card300;
-
         @include itemCompra;
         @include itemCompra300;
     }
@@ -109,5 +92,6 @@
     @include header300;
     @include menuHam;
     @include menuHam300;
+    @include popUp;
 }
 /* //////////////////////////////////////////////////////////////////////////////// */

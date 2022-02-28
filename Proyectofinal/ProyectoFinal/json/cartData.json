@@ -28,7 +28,7 @@
         "nombre": "Virtual ball",
         "precio": "1000",
         "img": "https://images.unsplash.com/photo-1645262748907-6827d43215d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-        "desc": "A simple ball made witdh Blender",
+        "desc": "A simple ball made with Blender",
         "dim": "60cm x 40cm"
     }
 ]
