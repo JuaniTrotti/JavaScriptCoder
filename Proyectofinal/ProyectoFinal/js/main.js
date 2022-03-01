@@ -38,6 +38,5 @@ function cargarObras() {
 
 // espero a que el dom este listo
 $( document ).ready(function() {
-    console.log( "ready!" );
     cargarObras();
 });

@@ -7,7 +7,6 @@ function cargar() {
         method: "GET",
         url: "./json/cartData.json",
         success: function(respuesta) {
-            // reinicio el precio final
             $(".totalCompra").empty();
 
             if (localStorage.getItem("carro") == null) {
@@ -32,7 +31,6 @@ function cargar() {
                             // agregar boton para borrar
                             let lll = document.getElementById(i.id);
                             lll.addEventListener("click", function() {
-                                console.log(i.id);
                                 eliminarItemLocal(i.id, carroItem);
                             });
                         };
@@ -92,7 +90,6 @@ function eliminarItemLocal(i, ci) {
         ci.splice(index, 1);
         localStorage.setItem("carro", JSON.stringify(ci));
         $(".containerElementos").empty();
-        console.log(ci);
         cargar();
     }
 };
@@ -125,7 +122,6 @@ function finCompra() {
 // main
 // espero a que el dom este listo
 $( document).ready(function() {
-    console.log( "ready!" );
     localStorage.removeItem('href');
 
     cargar();

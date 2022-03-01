@@ -63,8 +63,6 @@ function crearPopErr() {
 };
 
 function search(arr, e) {
-    console.log(arr)
-    console.log(e)
     for(let i of arr) {
         if (i == e) {
             return true;
@@ -124,11 +122,7 @@ function directoCompra() {
 
 
 $( document ).ready(function() {
-    console.log( "ready!" );
-
     // main
-    console.log(linkId);
-
     crearFoto(linkId);
     crearTitulo(linkId);
     crearDesc(linkId);

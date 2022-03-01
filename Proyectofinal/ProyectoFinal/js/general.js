@@ -41,8 +41,6 @@ window.onload = function () {
 
 // espero a que el dom este listo
 $( document ).ready(function() {
-    console.log( "ready!" );
-
     // main 
     // animacion del menu Hamburguesa
     iconHam.onclick = function() {
@@ -72,7 +70,6 @@ $( document ).ready(function() {
             botonHam.setSpeed(2);
             botonHam.setDirection(-1);
             botonHam.play();
-            console.log("hice click")
         });
     };
 });
