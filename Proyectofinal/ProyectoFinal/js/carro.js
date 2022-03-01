@@ -1,4 +1,5 @@
 // variables
+const popUpEr = document.querySelector(".popUpCarro1")
 
 // funciones
 function cargar() {
@@ -10,9 +11,10 @@ function cargar() {
             $(".totalCompra").empty();
 
             if (localStorage.getItem("carro") == null) {
-                console.log("el carrito esta vacio");
-                // seteo el precio total en 0
-                $(".totalCompra").append(`<h2 class="textoTituloObra lb tt">$0</h2>`) 
+                $(".totalCompra").append(`<h2 class="textoTituloObra lb tt">$0</h2>`);
+                $(".containerElementos").append(`<div class="elementos cFlex">
+                                                    <div class="nombreEl cFlex"><h2 class="textoDimensiones lb">Empty</h2></div>        
+                                                </div>`)    
             } else {
                 var carroItem = JSON.parse(localStorage.getItem("carro"));
                 var suma = 0;
@@ -24,10 +26,10 @@ function cargar() {
                                                                 <div class="nombreEl cFlex"><h2 class="textoDimensiones lb">${i.nombre}</h2></div>        
                                                                 <div class="precioEl cFlex"><h2 class="textoDimensiones lb">$${i.precio}</h2></div>
                             </div>`)
-                               // total de la compra
+                            // total de la compra
                             suma += parseInt(i.precio);
 
-                               // agregar boton para borrar
+                            // agregar boton para borrar
                             let lll = document.getElementById(i.id);
                             lll.addEventListener("click", function() {
                                 console.log(i.id);
@@ -52,10 +54,18 @@ function cargarUI() {
                             </div>
                         </div>
                         <div class="btn1 cursorHover cFlex">
-                            <div class="buton1 cFlex">
+                            <div class="buton1 btnComprarCarro cFlex">
                                 <h2 class="textoDimensiones tb1 tb">Comprar</h2>
                             </div>
                         </div>`)
+};
+
+function crearPopErr() {
+    $(".popUpCarro1").append(`<div class="containerPop1 cFlex">
+                                <div class="textoTituloObra tpop cFlex">
+                                    <h2>The car is empty</h2>
+                                </div>
+                            </div>`)                  
 };
 
 
@@ -63,7 +73,7 @@ function cargarUI() {
 function borrarTodo() {
     $(".containerElementos").empty();
     cargar();
-}
+};
 
 // elimina el elemento deseado del carrito
 function eliminarItemLocal(i, ci) {
@@ -71,30 +81,63 @@ function eliminarItemLocal(i, ci) {
         ci.shift();
         localStorage.setItem("carro", JSON.stringify(ci));
         $(".containerElementos").empty();
-        cargar();
+        if (ci.length == 0) {
+            localStorage.clear();
+            cargar();
+        } else {
+            cargar();
+        }
     } else {
         let index = ci.indexOf(i);
         ci.splice(index, 1);
         localStorage.setItem("carro", JSON.stringify(ci));
         $(".containerElementos").empty();
+        console.log(ci);
         cargar();
     }
+};
+
+function popEr() {
+    popUpEr.classList.remove("popUpCarroHide1");
+    popUpEr.classList.add("popUpCarroShow1");
+    setTimeout(() => {
+        popUpEr.classList.remove("popUpCarroShow1");
+        popUpEr.classList.add("popUpCarroHide1");
+    }, 2000)
+};
+
+
+function finCompra() {
+    if (localStorage.getItem("carro") == null) {
+        popEr()
+    } else {
+        const carg = document.querySelector(".finComContainer");
+        carg.classList.remove("hideFin");
+        setTimeout(() => {
+            carg.classList.add("hideFin");
+        },2000)
+        localStorage.clear();
+        $(".containerElementos").empty();
+        cargar();
+    }
+
 }
-
-
 // main
 // espero a que el dom este listo
 $( document).ready(function() {
     console.log( "ready!" );
     localStorage.removeItem('href');
 
-    // carga los elementos del carrito
     cargar();
     cargarUI();
+    crearPopErr()
 
-    // boton para vaciar el carrito
     $(".btnBorrarCarro").on("click", function() {
         localStorage.clear();
         borrarTodo();
+    });
+
+    $(".btnComprarCarro").on("click", function() {
+        finCompra();
     });
 })
