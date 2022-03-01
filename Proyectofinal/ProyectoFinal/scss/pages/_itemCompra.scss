@@ -952,24 +952,6 @@
                     color: #606060;
                     font-size: 1.1rem;
                 }
-
-                .btnCerrar {
-                    padding: 10px;
-                }
-        
-                .btnCerrar:hover {
-                    border-radius: 100%;
-                    animation: closeBtn ease .8s forwards; 
-                }
-
-                @keyframes closeBtn {
-                    0% {
-                        background-color: #ffffff;
-                    }
-                    100% {
-                        background-color: #f1f1f1;
-                    }
-                }
             }
         }
     }
@@ -1018,8 +1000,49 @@
     }
 }
 
-@mixin popUp1200 {
-
+@mixin popUp600 {
+    .containerPop {
+        .popUpCarro {
+            height: 5vh;
+            .containerPop {
+                .tpop {
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+    .containerPop1 {
+        .popUpCarro1 {
+            height: 5vh;
+            .containerPop1 {
+                .tpop {
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
 }
 
+@mixin popUp300 {
+    .containerPop {
+        .popUpCarro {
+            height: 5vh;
+            .containerPop {
+                .tpop {
+                    font-size: .6rem;
+                }
+            }
+        }
+    }
+    .containerPop1 {
+        .popUpCarro1 {
+            height: 5vh;
+            .containerPop1 {
+                .tpop {
+                    font-size: .6rem;
+                }
+            }
+        }
+    }
+}
 /* //////////////////////////////////////////////////////////////////////////////// */

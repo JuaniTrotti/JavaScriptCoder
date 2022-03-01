@@ -51,9 +51,6 @@ function crearPop(o) {
                                 <div class="textoTituloObra tpop cFlex">
                                     <h2>Se agregó ${o.nombre} al carro</h2>
                                 </div>
-                                <div class="btnCerrar cFlex">
-                                    <img src="./img/svg/close.svg" alt="btnClose">
-                                </div>
                             </div>`)
 }
 

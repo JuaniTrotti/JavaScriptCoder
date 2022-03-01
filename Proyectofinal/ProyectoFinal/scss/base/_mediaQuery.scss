@@ -41,7 +41,6 @@
     @include menuHam;
     @include menuHam1200;
     @include popUp;
-    @include popUp1200;
 }
 
 @media screen and (max-width: 1200px) and (min-width: 900px) {
@@ -79,6 +78,7 @@
     @include menuHam;
     @include menuHam600;
     @include popUp;
+    @include popUp600;
 }
 
 @media screen and (max-width: 600px) and (min-width: 200px) {
@@ -98,5 +98,6 @@
     @include menuHam;
     @include menuHam300;
     @include popUp;
+    @include popUp300;
 }
 /* //////////////////////////////////////////////////////////////////////////////// */
