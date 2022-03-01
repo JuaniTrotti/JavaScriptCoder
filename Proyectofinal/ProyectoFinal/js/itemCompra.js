@@ -52,7 +52,7 @@ function crearPop(o) {
                                     <h2>Se agregó ${o.nombre} al carro</h2>
                                 </div>
                             </div>`)
-}
+};
 
 function crearPopErr() {
     $(".popUpCarro1").append(`<div class="containerPop1 cFlex">
@@ -60,7 +60,7 @@ function crearPopErr() {
                                     <h2>The item already exists in the cart</h2>
                                 </div>
                             </div>`)                  
-}
+};
 
 function search(arr, e) {
     console.log(arr)
@@ -68,10 +68,10 @@ function search(arr, e) {
     for(let i of arr) {
         if (i == e) {
             return true;
-        }
-    }
+        };
+    };
     return false;
-}
+};
 
 function popAr() {
     popUp.classList.remove("popUpCarroHide");
@@ -80,7 +80,7 @@ function popAr() {
         popUp.classList.remove("popUpCarroShow");
         popUp.classList.add("popUpCarroHide");
     }, 2000)
-}
+};
 
 function popEr() {
     popUpEr.classList.remove("popUpCarroHide1");
@@ -89,7 +89,7 @@ function popEr() {
         popUpEr.classList.remove("popUpCarroShow1");
         popUpEr.classList.add("popUpCarroHide1");
     }, 2000)
-}
+};
 
 function cargarCarro(){
     if (localStorage.getItem("carro") == null) {
@@ -106,7 +106,21 @@ function cargarCarro(){
             localStorage.setItem("carro", JSON.stringify(carroTemp));
         };
     };
-}
+};
+
+function directoCompra() {
+    if (localStorage.getItem("carro") == null) {
+        carro.push(linkId.id);
+        localStorage.setItem("carro", JSON.stringify(carro));
+    } else {
+        var carroTemp = JSON.parse(localStorage.getItem('carro'));
+        if (search(carroTemp, linkId.id) == true) {
+        } else {
+            carroTemp.push(linkId.id);
+            localStorage.setItem("carro", JSON.stringify(carroTemp));
+        };
+    };
+};
 
 
 $( document ).ready(function() {
@@ -126,7 +140,7 @@ $( document ).ready(function() {
         cargarCarro();
     });
     $(".btn2").on("click", function() {
-        
+        directoCompra();
     });
 });
 

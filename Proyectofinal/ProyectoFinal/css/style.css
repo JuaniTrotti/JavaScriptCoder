@@ -986,6 +986,69 @@ body::-webkit-scrollbar-thumb {
     color: #ffffff;
     font-size: 1.1rem;
   }
+
+  .cargaContainer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: #0f0f22;
+    z-index: 40;
+    transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+  }
+  .cargaContainer .carga {
+    border: 5px solid #0f0f22;
+    border-top-color: #61f89b;
+    border-top-width: 5px;
+    width: 15vh;
+    height: 15vh;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    animation: carga 1s infinite;
+  }
+  .cargaContainer .carga1 {
+    border: 4px solid #0f0f22;
+    border-top-color: #61f89b;
+    width: 15vh;
+    height: 15vh;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    animation: carga1 1s infinite;
+  }
+  @keyframes carga {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes carga1 {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 }
 @media screen and (max-width: 1800px) and (min-width: 1200px) {
   .containerBody {
@@ -1539,6 +1602,69 @@ body::-webkit-scrollbar-thumb {
   .containerPop1 .popUpCarro1 .containerPop1 .tpop {
     color: #ffffff;
     font-size: 1.1rem;
+  }
+
+  .cargaContainer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: #0f0f22;
+    z-index: 40;
+    transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+  }
+  .cargaContainer .carga {
+    border: 5px solid #0f0f22;
+    border-top-color: #61f89b;
+    border-top-width: 5px;
+    width: 15vh;
+    height: 15vh;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    animation: carga 1s infinite;
+  }
+  .cargaContainer .carga1 {
+    border: 4px solid #0f0f22;
+    border-top-color: #61f89b;
+    width: 15vh;
+    height: 15vh;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    animation: carga1 1s infinite;
+  }
+  @keyframes carga {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes carga1 {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
 }
 @media screen and (max-width: 1200px) and (min-width: 900px) {
@@ -2235,6 +2361,69 @@ body::-webkit-scrollbar-thumb {
   .containerPop1 .popUpCarro1 .containerPop1 .tpop {
     color: #ffffff;
     font-size: 1.1rem;
+  }
+
+  .cargaContainer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: #0f0f22;
+    z-index: 40;
+    transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+  }
+  .cargaContainer .carga {
+    border: 5px solid #0f0f22;
+    border-top-color: #61f89b;
+    border-top-width: 5px;
+    width: 15vh;
+    height: 15vh;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    animation: carga 1s infinite;
+  }
+  .cargaContainer .carga1 {
+    border: 4px solid #0f0f22;
+    border-top-color: #61f89b;
+    width: 15vh;
+    height: 15vh;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    animation: carga1 1s infinite;
+  }
+  @keyframes carga {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes carga1 {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
 }
 @media screen and (max-width: 900px) and (min-width: 600px) {
@@ -2961,6 +3150,69 @@ body::-webkit-scrollbar-thumb {
   }
   .containerPop1 .popUpCarro1 .containerPop1 .tpop {
     font-size: 0.8rem;
+  }
+
+  .cargaContainer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: #0f0f22;
+    z-index: 40;
+    transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+  }
+  .cargaContainer .carga {
+    border: 5px solid #0f0f22;
+    border-top-color: #61f89b;
+    border-top-width: 5px;
+    width: 15vh;
+    height: 15vh;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    animation: carga 1s infinite;
+  }
+  .cargaContainer .carga1 {
+    border: 4px solid #0f0f22;
+    border-top-color: #61f89b;
+    width: 15vh;
+    height: 15vh;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    animation: carga1 1s infinite;
+  }
+  @keyframes carga {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes carga1 {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
 }
 @media screen and (max-width: 600px) and (min-width: 200px) {
@@ -3745,6 +3997,69 @@ body::-webkit-scrollbar-thumb {
   }
   .containerPop1 .popUpCarro1 .containerPop1 .tpop {
     font-size: 0.6rem;
+  }
+
+  .cargaContainer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: #0f0f22;
+    z-index: 40;
+    transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+  }
+  .cargaContainer .carga {
+    border: 5px solid #0f0f22;
+    border-top-color: #61f89b;
+    border-top-width: 5px;
+    width: 15vh;
+    height: 15vh;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    animation: carga 1s infinite;
+  }
+  .cargaContainer .carga1 {
+    border: 4px solid #0f0f22;
+    border-top-color: #61f89b;
+    width: 15vh;
+    height: 15vh;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    animation: carga1 1s infinite;
+  }
+  @keyframes carga {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes carga1 {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
 }
 /* //////////////////////////////////////////////////////////////////////////////// */

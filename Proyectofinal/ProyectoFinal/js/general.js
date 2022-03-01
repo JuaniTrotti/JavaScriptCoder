@@ -6,6 +6,8 @@ const fondoM = document.querySelector(".fondoMenu");
 const pointer = document.querySelector(".htmlCursor");
 const menuHover = document.querySelector(".menuHam");
 
+
+
 var cont = 1
 
 // boton animado
@@ -29,6 +31,12 @@ function disableScroll(){
 // desbloquea el scroll
 function enableScroll(){  
     window.onscroll = null;
+}
+
+window.onload = function () {
+    const carga = document.querySelector(".cargaContainer");
+    carga.style.visibility = 'hidden';
+    carga.style.opacity = '0';
 }
 
 // espero a que el dom este listo

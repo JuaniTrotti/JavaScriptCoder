@@ -23,6 +23,7 @@
     @include carritoEl;
     @include menuHam;
     @include popUp;
+    @include carga;
 }   
 
 @media screen and (max-width: 1800px) and (min-width: 1200px) {
@@ -41,6 +42,7 @@
     @include menuHam;
     @include menuHam1200;
     @include popUp;
+    @include carga;
 }
 
 @media screen and (max-width: 1200px) and (min-width: 900px) {
@@ -60,6 +62,7 @@
     @include menuHam;
     @include menuHam900;
     @include popUp;
+    @include carga;
 }
 
 @media screen and (max-width: 900px) and (min-width: 600px) {
@@ -79,6 +82,7 @@
     @include menuHam600;
     @include popUp;
     @include popUp600;
+    @include carga;
 }
 
 @media screen and (max-width: 600px) and (min-width: 200px) {
@@ -99,5 +103,6 @@
     @include menuHam300;
     @include popUp;
     @include popUp300;
+    @include carga;
 }
 /* //////////////////////////////////////////////////////////////////////////////// */

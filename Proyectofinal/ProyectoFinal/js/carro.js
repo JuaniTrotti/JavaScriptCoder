@@ -17,7 +17,6 @@ function cargar() {
                 var carroItem = JSON.parse(localStorage.getItem("carro"));
                 var suma = 0;
                 for(let item of carroItem) {
-                    // forma sin hardcoreo de datos
                     for(let i of respuesta) {
                         if(item == i.id){
                             $(".containerElementos").append(`<div class="elementos cFlex">
