@@ -16,8 +16,6 @@ const isTouch = isTouchDevice();
 
 // main 
 $(document).ready(function() {
-    console.log("ready cursor")
-
     if (!isTouch) {
         // funciones 
         const eventos = () => {
