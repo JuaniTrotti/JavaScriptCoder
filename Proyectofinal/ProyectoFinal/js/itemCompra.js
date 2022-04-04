@@ -49,7 +49,7 @@ function crearBot() {
 function crearPop(o) {
     $(".popUpCarro").append(`<div class="containerPop cFlex">
                                 <div class="textoTituloObra tpop cFlex">
-                                    <h2>Se agregó ${o.nombre} al carro</h2>
+                                    <h2>Item add</h2>
                                 </div>
                             </div>`)
 };

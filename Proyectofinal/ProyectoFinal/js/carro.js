@@ -48,12 +48,12 @@ function cargar() {
 function cargarUI() {
     $(".opCarro").append(`<div class="btn2 cursorHover cFlex">
                             <div class="buton2 btnBorrarCarro cFlex">
-                                <h2 class="textoDimensiones tb2 tb">Vaciar carro</h2>
+                                <h2 class="textoDimensiones tb2 tb">Clear</h2>
                             </div>
                         </div>
                         <div class="btn1 cursorHover cFlex">
                             <div class="buton1 btnComprarCarro cFlex">
-                                <h2 class="textoDimensiones tb1 tb">Comprar</h2>
+                                <h2 class="textoDimensiones tb1 tb">Checkout</h2>
                             </div>
                         </div>`)
 };
